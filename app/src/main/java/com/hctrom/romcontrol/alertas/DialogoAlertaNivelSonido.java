@@ -94,25 +94,25 @@ public class DialogoAlertaNivelSonido extends DialogFragment implements View.OnC
                 Shell.getRebootAction("" + sh.getNivelSonidoStock());
                 editor.putString("sonido_nivel_sistema", "1");
                 editor.commit();
-                Toast.makeText(getActivity(), "Sonido Stock seleccionado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Sound stock selected", Toast.LENGTH_LONG).show();
             }
             if(medio.isChecked()){
                 Shell.getRebootAction("" + sh.getNivelSonidoMedio());
                 editor.putString("sonido_nivel_sistema", "2");
                 editor.commit();
-                Toast.makeText(getActivity(), "Sonido Medio seleccionado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Sound mid selected", Toast.LENGTH_LONG).show();
             }
             if(alto.isChecked()){
                 Shell.getRebootAction("" + sh.getNivelSonidoAlto());
                 editor.putString("sonido_nivel_sistema", "3");
                 editor.commit();
-                Toast.makeText(getActivity(), "Sonido Alto seleccionado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Sound loud selected", Toast.LENGTH_LONG).show();
             }
             if(extremo.isChecked()){
                 Shell.getRebootAction("" + sh.getNivelSonidoExtremo());
                 editor.putString("sonido_nivel_sistema", "4");
                 editor.commit();
-                Toast.makeText(getActivity(), "Sonido Extremo seleccionado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Sound extreme selected", Toast.LENGTH_LONG).show();
             }
             getDialog().dismiss();
             final DialogoAlertaReiniciar dialogo = new DialogoAlertaReiniciar();

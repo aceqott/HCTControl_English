@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="backup_items">
-        <item>Copiar</item>
-        <item>Restaurar</item>
+        <item>Backup</item>
+        <item>Restore</item>
     </string-array>
     <string-array name="toggle_buttons_background_entries">
-        <item>Default S7 (Para temas)</item>
+        <item>Default S7 (for themes)</item>
         <item>Convex</item>
         <item>Concave</item>
         <item>Glass</item>
@@ -76,9 +76,9 @@
 
     <!-- favorite columns-->
     <string-array name="dashboard_fav_columns_entries">
-        <item>"3 columnas"</item>
-        <item>"4 columnas"</item>
-        <item>"5 columnas"</item>
+        <item>"3 columns"</item>
+        <item>"4 columns"</item>
+        <item>"5 columns"</item>
     </string-array>
     <string-array name="dashboard_fav_columns_values">
         <item>3</item>
@@ -88,9 +88,9 @@
 
     <!-- clock statusbar-->
     <string-array name="clock_style_status_entries">
-        <item>Derecha</item>
-        <item>Centro</item>
-        <item>Izquierda</item>
+        <item>Right</item>
+        <item>Center</item>
+        <item>Left</item>
     </string-array>
     <string-array name="clock_style_status_values">
         <item>0</item>
@@ -98,9 +98,9 @@
         <item>2</item>
     </string-array>
     <string-array name="entries_status_bar_am_pm">
-        <item>No mostrar</item>
-        <item>Pequeño \n*Aplicar formato de 12h</item>
-        <item>Normal \n*Aplicar formato de 12h</item>
+        <item>"Don't show"</item>
+        <item>Small \n*Apply format 12h</item>
+        <item>Regular \n*Apply format 12h</item>
     </string-array>
     <string-array name="values_status_bar_am_pm">
         <item>0</item>
@@ -108,9 +108,9 @@
         <item>2</item>
     </string-array>
     <string-array name="clock_date_style_entries">
-        <item>Normal</item>
-        <item>Minúsculas</item>
-        <item>Mayúsculas</item>
+        <item>Normal date</item>
+        <item>Lowercase date</item>
+        <item>Uppercase date</item>
     </string-array>
     <string-array name="clock_date_style_values">
         <item>0</item>
@@ -138,9 +138,9 @@
         <item>EEEE MM/dd</item>
     </string-array>
     <string-array name="clock_date_display_entries">
-        <item>No mostrar</item>
-        <item>Pequeño</item>
-        <item>Normal</item>
+        <item>"Don't show"</item>
+        <item>Small date</item>
+        <item>Regular date</item>
     </string-array>
     <string-array name="clock_date_display_values">
         <item>0</item>
@@ -180,8 +180,8 @@
         <item>13</item>
     </string-array>
     <string-array name="clock_date_position_entries">
-        <item>Al principio</item>
-        <item>Al final</item>
+        <item>Clock date left</item>
+        <item>Clock date right</item>
     </string-array>
     <string-array name="clock_date_position_values">
         <item>0</item>
@@ -194,14 +194,14 @@
         <item>1</item>
     </string-array>
     <string-array name="shape_entries">
-        <item>Stock</item>
-        <item>Esquinas redondeadas</item>
+        <item>Stock shape</item>
+        <item>Rounded corners</item>
     </string-array>
 
     <!-- Settings -->
     <string-array name="dashboard_num_columns_entries">
-        <item>1 Columna</item>
-        <item>2 Columnas</item>
+        <item>1 Column</item>
+        <item>2 Columns</item>
     </string-array>
     <string-array name="dashboard_num_columns_values">
         <item>1</item>
@@ -210,13 +210,13 @@
 
     <!-- lockscreen display timeout-->
     <string-array name="display_timeout_entries">
-        <item>5 segundos</item>
-        <item>10 segundos (Por defecto)</item>
-        <item>15 segundos</item>
-        <item>30 segundos</item>
-        <item>60 segundos</item>
-        <item>2 minutos</item>
-        <item>5 minutos</item>
+        <item>5 seconds</item>
+        <item>10 seconds (default)</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>60 seconds</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
     </string-array>
     <string-array name="display_timeout_values">
         <item>5000</item>
@@ -230,9 +230,9 @@
 
     <!-- BatteryBar -->
     <string-array name="battery_bar_entries">
-        <item>Oculto</item>
-        <item>Mostrar en la parte superior Statusbar</item>
-        <item>Mostrar en la parte inferior Statusbar</item>
+        <item>Hide</item>
+        <item>Show up top</item>
+        <item>Show down below</item>
     </string-array>
     <string-array name="battery_bar_values">
         <item>2</item>
@@ -240,8 +240,8 @@
         <item>1</item>
     </string-array>
     <string-array name="battery_bar_style_entries">
-        <item>Normal</item>
-        <item>Centro</item>
+        <item>Regular</item>
+        <item>Center-mirrored</item>
     </string-array>
     <string-array name="battery_bar_style_values">
         <item>0</item>
@@ -268,24 +268,24 @@
         <item>3</item>
     </string-array>
     <string-array name="traffic_state_items">
-        <item>Desactivado</item>
-        <item>Sólo subida</item>
-        <item>Sólo bajada</item>
-        <item>Subida y bajada</item>
+        <item>Disable view</item>
+        <item>Upload only</item>
+        <item>Download only</item>
+        <item>Upload and Download</item>
     </string-array>
     <string-array name="arrow_position_values">
         <item>0</item>
         <item>1</item>
     </string-array>
     <string-array name="arrow_position_entries">
-        <item>Al final</item>
-        <item>Al principio</item>
+        <item>To end of view</item>
+        <item>To start of view</item>
     </string-array>
     <string-array name="traffic_style_entries">
         <item>Normal</item>
-        <item>Negrita</item>
-        <item>Cursiva</item>
-        <item>Negrita cursiva</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
     </string-array>
     <string-array name="traffic_style_entry_values">
         <item>0</item>
@@ -296,16 +296,16 @@
 
     <!-- heads up time out -->
     <string-array name="pref_heads_up_timeout_titles">
-        <item>1seg</item>
-        <item>2seg</item>
-        <item>3seg (Por defecto)</item>
-        <item>4seg</item>
-        <item>5seg</item>
-        <item>6seg</item>
-        <item>7seg</item>
-        <item>8seg</item>
-        <item>9seg</item>
-        <item>10seg</item>
+        <item>1s</item>
+        <item>2s</item>
+        <item>3s (Default)</item>
+        <item>4s</item>
+        <item>5s</item>
+        <item>6s</item>
+        <item>7s</item>
+        <item>8s</item>
+        <item>9s</item>
+        <item>10s</item>
     </string-array>
     <string-array name="pref_heads_up_timeout_values">
         <item>1000</item>
@@ -348,9 +348,9 @@
 
     <!-- Bloqueo y Home -->
     <string-array name="anlorlock_entries">
-        <item>Ocultar</item>
-        <item>Derecha</item>
-        <item>Izquierda</item>
+        <item>Hidden</item>
+        <item>Right</item>
+        <item>Left</item>
     </string-array>
     <string-array name="anlorlock_values">
         <item>3</item>
@@ -358,9 +358,9 @@
         <item>2</item>
     </string-array>
     <string-array name="anlorhome_entries">
-        <item>Ocultar</item>
-        <item>Derecha</item>
-        <item>Izquierda</item>
+        <item>Hidden</item>
+        <item>Right</item>
+        <item>Left</item>
     </string-array>
     <string-array name="anlorhome_values">
         <item>0</item>
@@ -370,8 +370,8 @@
 
     <!-- Signal position -->
     <string-array name="SignalPositionName">
-        <item>Se muestra a la derecha</item>
-        <item>Se muestra a la izquierda</item>
+        <item>Shown on the Right</item>
+        <item>Shown on the Left</item>
     </string-array>
     <string-array name="SignalPositionValue">
         <item>0</item>
@@ -394,9 +394,9 @@
 
     <!-- Custom bg InCallUI -->
     <string-array name="custom_bg_type_entries">
-        <item>Imagen</item>
-        <item>Color sólido</item>
-        <item>Gradiente</item>
+        <item>Image</item>
+        <item>Solid color</item>
+        <item>Gradient</item>
     </string-array>
     <string-array name="custom_bg_type_values" translatable="false">
         <item>0</item>
@@ -404,10 +404,10 @@
         <item>2</item>
     </string-array>
     <string-array name="gradient_entries">
-        <item>De arriba hacia abajo</item>
-        <item>De abajo hacia arriba</item>
-        <item>De izquierda a derecha</item>
-        <item>De derecha a izquierda</item>
+        <item>Top to bottom</item>
+        <item>Bottom to top</item>
+        <item>Left to right</item>
+        <item>Right to left</item>
     </string-array>
     <string-array name="gradient_values" translatable="false">
         <item>0</item>
@@ -416,9 +416,9 @@
         <item>3</item>
     </string-array>
     <string-array name="crop_entries">
-        <item>Recorte central</item>
-        <item>Centrar en el interior</item>
-        <item>Ajustar</item>
+        <item>Center crop</item>
+        <item>Center inside</item>
+        <item>Fit XY</item>
     </string-array>
     <string-array name="crop_values" translatable="false">
         <item>0</item>
@@ -428,10 +428,10 @@
 
     <!-- End Call Delay -->
     <string-array name="call_delay_entries">
-        <item>Sin retraso</item>
+        <item>No delay</item>
         <item>1000ms</item>
         <item>2500ms</item>
-        <item>Por defecto (5000ms)</item>
+        <item>Default (5000ms)</item>
     </string-array>
     <string-array name="call_delay_values">
         <item>0</item>
@@ -442,14 +442,14 @@
 
     <!-- touchwiz effects -->
     <string-array name="tw_effect_entries">
-        <item>Ninguno</item>
-        <item>Cascada</item>
-        <item>Cubo exterior</item>
-        <item>Cubo interior</item>
-        <item>Carrusel</item>
-        <item>Simple</item>
-        <item>Transportador</item>
-        <item>Carta</item>
+        <item>None</item>
+        <item>Cascade</item>
+        <item>Outer cube</item>
+        <item>Inner Cube</item>
+        <item>Carousal</item>
+        <item>Plain</item>
+        <item>Conveyor</item>
+        <item>Card</item>
     </string-array>
     <string-array name="tw_effect_values">
         <item>1</item>
@@ -464,22 +464,22 @@
 
     <!-- touchwiz swipe -->
     <string-array name="launcher_gesture_entries">
-        <item>Apagar la pantalla</item>
+        <item>Turn off the screen</item>
         <item>Power menu</item>
-        <item>Aplicaciones Recientes</item>
+        <item>Recent applications</item>
         <item>Volume  +</item>
         <item>Volume  -</item>
         <item>Dialer</item>
         <item>Google search</item>
-        <item>Modo de sonido: Sonido / Vibración / Silencio</item>
-        <item>Linterna</item>
-        <item>Captura de pantalla</item>
-        <item>Panel de notificación</item>
-        <item>Activar/Desactivar Wi-Fi</item>
-        <item>Activar/Desactivar Datos</item>
-        <item>Activar/Desactivar Bluetooth</item>
-        <item>Limpiar memoria</item>
-        <item>Desactivado</item>
+        <item>Sound Mode: Sound / Vibration / Silent</item>
+        <item>Torchlight</item>
+        <item>Screenshot</item>
+        <item>Notifications panel</item>
+        <item>Switch Wi-Fi</item>
+        <item>Switch Mobile data</item>
+        <item>Switch Bluetooth</item>
+        <item>Clear memory</item>
+        <item>Disable</item>
     </string-array>
     <string-array name="launcher_gesture_values">
         <item>0</item>
@@ -556,8 +556,8 @@
 
     <!-- carrier panel -->
     <string-array name="carrier_entries">
-        <item>Texto operadora predeterminado</item>
-        <item>Texto personalizado</item>
+        <item>Actual carrier text</item>
+        <item>Custom text</item>
     </string-array>
     <string-array name="carrier_entry_values">
         <item>0</item>
@@ -566,9 +566,9 @@
 
     <!-- data usage -->
     <string-array name="data_usage_gravity_entries">
-        <item>Al final</item>
-        <item>En el centro</item>
-        <item>Al principio</item>
+        <item>To end</item>
+        <item>Center horizontal</item>
+        <item>To start</item>
     </string-array>
     <string-array name="data_usage_gravity_values" translatable="false">
         <item>0</item>
@@ -577,9 +577,9 @@
     </string-array>
     <string-array name="data_usage_text_style_entries">
         <item>Normal</item>
-        <item>Negrita</item>
-        <item>Cursiva</item>
-        <item>Negrita cursiva</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
     </string-array>
     <string-array name="data_usage_text_style_values" translatable="false">
         <item>0</item>
@@ -590,31 +590,31 @@
 
     <!-- custom date -->
     <string-array name="custom_date">
-        <item>Vie, Octubre 16 (Stock)</item>
-        <item>Vie, 16 Octubre</item>
-        <item>16 Octubre, 2014</item>
-        <item>2014, Octubre 16</item>
-        <item>"Jueves
-Octubre 16, 2014"</item>
-        <item>"Jueves
+        <item>Fri, October 16 (Stock)</item>
+        <item>Fri, 16 October</item>
+        <item>16 October, 2014</item>
+        <item>2014, October 16</item>
+        <item>"Thursday
+October 16, 2014"</item>
+        <item>"Thursday
 Oct 16, 2014"</item>
         <item>Oct-16-2014</item>
-        <item>"Jueves
+        <item>"Thursday
 Oct-16-2014"</item>
         <item>10-16-2014</item>
-        <item>"Jueves
+        <item>"Thursday
 10-16-2014"</item>
         <item>10-16-14</item>
-        <item>"Jueves
+        <item>"Thursday
 10-16-14"</item>
         <item>Oct/16/2014</item>
-        <item>"Jueves
+        <item>"Thursday
 Oct/16/2014"</item>
         <item>10/16/2014</item>
-        <item>"Jueves
+        <item>"Thursday
 10/16/2014"</item>
         <item>10/16/14</item>
-        <item>"Jueves
+        <item>"Thursday
 10/16/14"</item>
     </string-array>
     <string-array name="custom_date_values">

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:title="Selecciona imagen"
+        android:title="Select image"
         android:id="@+id/imageMenu"
         android:icon="@drawable/ic_image"
         android:showAsAction="always"/>
     <item
-        android:title="Ajustar imagen"
+        android:title="Adjust image"
         android:id="@+id/cropMenu"
         android:icon="@drawable/ic_crop"
         android:showAsAction="always"/>

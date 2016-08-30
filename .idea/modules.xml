@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HCTControl.iml" filepath="$PROJECT_DIR$/HCTControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HCTControl_English.iml" filepath="$PROJECT_DIR$/HCTControl_English.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

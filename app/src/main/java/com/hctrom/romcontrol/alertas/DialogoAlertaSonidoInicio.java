@@ -87,19 +87,19 @@ public class DialogoAlertaSonidoInicio extends DialogFragment implements View.On
                 Shell.getRebootAction("" + sh.getSonidoInicioStock());
                 editor.putString("sonido_inicio", "1");
                 editor.commit();
-                Toast.makeText(getActivity(), "Sonido Stock seleccionado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Boot Sound stock selected", Toast.LENGTH_LONG).show();
             }
             if(hct.isChecked()){
                 Shell.getRebootAction("" + sh.getSonidoInicioHCT());
                 editor.putString("sonido_inicio", "2");
                 editor.commit();
-                Toast.makeText(getActivity(), "Sonido HCT seleccionado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Boot Sound HCT selected", Toast.LENGTH_LONG).show();
             }
             if(off.isChecked()){
                 Shell.getRebootAction("" + sh.getSonidoInicioOff());
                 editor.putString("sonido_inicio", "3");
                 editor.commit();
-                Toast.makeText(getActivity(), "Sonido inicio desactivado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Boot Sound disabled", Toast.LENGTH_LONG).show();
             }
             getDialog().dismiss();
             final DialogoAlertaReiniciar dialogo = new DialogoAlertaReiniciar();

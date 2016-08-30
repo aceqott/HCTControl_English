@@ -90,7 +90,7 @@ public class Tab3AppInfo extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                Toast.makeText(getActivity(), "Lista Apps\nActualizada", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "List Apps\nUpdated", Toast.LENGTH_SHORT).show();
                 pkgInfoArrayList = packageHunter.getInstalledPackages();
                 adapter.updateWithNewListData(pkgInfoArrayList);
                 break;

@@ -22,8 +22,8 @@ public class DialogoAlertaBackup extends DialogFragment {
         theme.onActivityCreateSetTheme(getActivity());
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        builder.setMessage("No se ha encontrado ningún backup, por favor configure HCTControl a su gusto y luego realice un Backup para poder Restaurarlo en cualquier otro momento.")
-                .setTitle("¡¡¡ATENCIÓN!!!")
+        builder.setMessage("It has not found any backup, please set HCT Control to your liking and then perform a backup to restore at any time.")
+                .setTitle("¡¡¡ATTENTION!!!")
                 .setCancelable(false)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {

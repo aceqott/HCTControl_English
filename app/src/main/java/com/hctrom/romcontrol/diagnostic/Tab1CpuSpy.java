@@ -257,7 +257,7 @@ public class Tab1CpuSpy extends Fragment {
             try {
                 monitor.updateStates();
             } catch (CpuStateMonitor.CpuStateMonitorException e) {
-                Log.e(TAG, "Problema obteniendo estado de la CPU");
+                Log.e(TAG, "Problem getting CPU status");
             }
 
             return null;
@@ -265,13 +265,13 @@ public class Tab1CpuSpy extends Fragment {
 
         /** Executed on the UI thread right before starting the task */
         @Override protected void onPreExecute() {
-            log("Actualizando datos");
+            log("Updating data");
             _updatingData = true;
         }
 
         /** Executed on UI thread after task */
         @Override protected void onPostExecute(Void v) {
-            log("Actualización de datos terminada");
+            log("Data update completed");
             _updatingData = false;
             updateView();
         }

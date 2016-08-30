@@ -22,9 +22,9 @@ public class DialogoAlertaConexion extends DialogFragment {
         theme.onActivityCreateSetTheme(getActivity());
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        builder.setMessage("Para poder continuar, se requiere conexión a internet.\n" +
-                "Por favor, compruebe su conexión e intentelo de nuevo...")
-                .setTitle("¡¡¡ATENCIÓN!!!")
+        builder.setMessage("To continue, internet connection is required.\n" +
+                "Please check your connection and try again...")
+                .setTitle("¡¡¡ATTENTION!!!")
                 .setCancelable(false)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {

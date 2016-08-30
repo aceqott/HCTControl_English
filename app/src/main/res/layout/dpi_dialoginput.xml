@@ -7,7 +7,7 @@
         android:textColor="#fff" android:layout_width="match_parent"
         android:id="@+id/textView1"
         android:layout_height="50dp"
-        android:layout_marginBottom="10dp" android:text="Personalizar DPI"
+        android:layout_marginBottom="10dp" android:text="Custom DPI"
         android:background="@color/myAccentColor"
         android:gravity="center_vertical|center_horizontal"
         android:layout_gravity="center_horizontal" />

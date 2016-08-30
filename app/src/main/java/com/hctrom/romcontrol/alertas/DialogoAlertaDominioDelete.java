@@ -25,8 +25,8 @@ public class DialogoAlertaDominioDelete extends DialogFragment {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        builder.setMessage("¿Desea eliminar el contenido completo de la lista blanca?")
-                .setTitle("ELIMINAR LISTA BLANCA")
+        builder.setMessage("You want to delete the entire contents of the whitelist?")
+                .setTitle("DELETE WHITE LIST")
                 .setOnKeyListener(new Dialog.OnKeyListener() {
                     @Override
                     public boolean onKey(DialogInterface arg0, int keyCode, KeyEvent event) {
@@ -37,7 +37,7 @@ public class DialogoAlertaDominioDelete extends DialogFragment {
                         return true;
                     }
                 })
-                .setPositiveButton("ELIMINAR", new DialogInterface.OnClickListener() {
+                .setPositiveButton("DELETE", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // ListView Clicked item index
                         SharedPreferences data = PreferenceManager.getDefaultSharedPreferences(getActivity());
@@ -55,7 +55,7 @@ public class DialogoAlertaDominioDelete extends DialogFragment {
                         HostWhiteListView.reiniciarActivity(getActivity());
                     }
                 })
-                .setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
+                .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                     }

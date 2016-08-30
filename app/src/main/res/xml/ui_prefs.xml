@@ -3,44 +3,44 @@
     <PreferenceScreen
         android:icon="@drawable/ic_clock2"
         android:widgetLayout="@layout/round_more_icon"
-        android:summary="Personalizar estilo y posicionar el reloj y la fecha de la StatusBar"
+        android:summary="Customize style and position the clock and date of the StatusBar"
         android:title="Statusbar Clock">
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Reloj">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Clock">
             <SwitchPreference
-                android:title="Mostrar Reloj y fecha"
+                android:title="Show Clock and Date"
                 android:key="status_bar_clock"
                 android:defaultValue="true"
-                android:summaryOn="Visible"
-                android:summaryOff="Oculto" />
+                android:summaryOn="Shown"
+                android:summaryOff="Hidden" />
             <SwitchPreference
                 android:dependency="status_bar_clock"
-                android:title="Activar segundos"
+                android:title="Enable seconds"
                 android:key="clock_use_second"
-                android:summaryOn="Visible"
-                android:summaryOff="Oculto"
+                android:summaryOn="Shown"
+                android:summaryOff="Hidden"
                 android:defaultValue="false" />
             <com.hctrom.romcontrol.prefs.SeekBarPreference
                 android:dependency="status_bar_clock"
                 android:max="23"
-                android:title="Tamaño"
-                android:summary="Ajustar el tamaño de reloj y fecha"
+                android:title="Size"
+                android:summary="Resize clock and date"
                 android:key="statusbar_clock_font_size"
                 android:defaultValue="14"
                 min="4"
                 unitsRight="dp" />
             <SwitchPreference
-                android:title="Activar color personalizado"
+                android:title="Enable custom color"
                 android:key="enable_clock_text_color"
                 android:dependency="status_bar_clock"
                 android:defaultValue="false"
-                android:summaryOn="Activado"
-                android:summaryOff="Desactivado. \n*Establecer abajo color a blanco para una total compatibilización con el cambio de color de la Statusbar." />
+                android:summaryOn="Enabled"
+                android:summaryOff="Disabled. \n*Set down color to white for full compatibility with the color change of the Statusbar." />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:dependency="enable_clock_text_color"
                 android:title="Color"
                 android:key="statusbar_clock_color"
                 android:defaultValue="#ffffff"
-                android:summary="Elegir el color de reloj y fecha"
+                android:summary="Choose the color of clock and date"
                 alphaSlider="true"
                 hexValue="true"/>
             <com.hctrom.romcontrol.prefs.MyListPreference
@@ -48,12 +48,12 @@
                 android:widgetLayout="@layout/round_more_icon"
                 android:dependency="status_bar_clock"
                 android:entries="@array/clock_font_style_entries"
-                android:title="Estilo de fuente"
+                android:title="Font Style"
                 android:key="statusbar_clock_font_style"
                 android:entryValues="@array/clock_font_style_values" />
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:entries="@array/clock_style_status_entries"
-                android:title="Alineación"
+                android:title="Alignment"
                 android:key="statusbar_clock_style"
                 android:dependency="status_bar_clock"
                 android:widgetLayout="@layout/round_more_icon"
@@ -62,17 +62,17 @@
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:dependency="status_bar_clock"
                 android:entries="@array/entries_status_bar_am_pm"
-                android:title="Estilo AM/PM"
+                android:title="Style AM/PM"
                 android:defaultValue="0"
                 android:widgetLayout="@layout/round_more_icon"
                 android:key="statusbar_clock_am_pm_style"
                 android:entryValues="@array/values_status_bar_am_pm" />
         </PreferenceCategory>
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Fecha">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Date">
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:dependency="status_bar_clock"
                 android:entries="@array/clock_date_display_entries"
-                android:title="Fecha"
+                android:title="Date"
                 android:widgetLayout="@layout/round_more_icon"
                 android:defaultValue="0"
                 android:key="statusbar_clock_date_display"
@@ -82,7 +82,7 @@
                 android:defaultValue="0"
                 android:widgetLayout="@layout/round_more_icon"
                 android:entries="@array/clock_date_position_entries"
-                android:title="Posición de la fecha"
+                android:title="Position date"
                 android:key="statusbar_clock_date_position"
                 android:entryValues="@array/clock_date_position_values" />
             <com.hctrom.romcontrol.prefs.MyListPreference
@@ -90,14 +90,14 @@
                 android:defaultValue="0"
                 android:widgetLayout="@layout/round_more_icon"
                 android:entries="@array/clock_date_style_entries"
-                android:title="Estilo de fecha"
+                android:title="Style date"
                 android:key="statusbar_clock_date_style"
                 android:entryValues="@array/clock_date_style_values" />
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:widgetLayout="@layout/round_more_icon"
                 android:dependency="status_bar_clock"
                 android:entries="@array/clock_date_format_entries_values"
-                android:title="Formato de fecha"
+                android:title="Date format"
                 android:key="statusbar_clock_date_format"
                 android:entryValues="@array/clock_date_format_entries_values" />
         </PreferenceCategory>
@@ -105,39 +105,39 @@
     <PreferenceScreen
         android:icon="@drawable/ic_batteryreborn"
         android:title="Battery Bar"
-        android:summary="Personalizar y posicionar la barra de nivel de batería en la Statusbar"
+        android:summary="Customize and position the batterybar in the Statusbar"
         android:widgetLayout="@layout/round_more_icon">
         <PreferenceCategory android:layout="@layout/preferences_category" android:title="Battery Bar">
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:entries="@array/battery_bar_entries"
-                android:title="Ubicación"
+                android:title="Battery Bar"
                 android:key="battery_bar"
                 android:summary="%s"
                 android:widgetLayout="@layout/round_more_icon"
                 android:defaultValue="2"
                 android:entryValues="@array/battery_bar_values" />
             <SwitchPreference
-                android:title="Ubicación en Panel de notificación"
+                android:title="Show/Hide down BELOW Pulldown/Lockscreen"
                 android:key="battbar_no_pulldown_below"
                 android:defaultValue="true"
-                android:summaryOn="Se muestra debajo en Panel de notificación, cuando Battery Bar está en la PARTE INFERIOR de la Statusbar"
-                android:summaryOff="No se mostrará debajo en Panel de notificación." />
+                android:summaryOn="Down BELOW shown everywhere"
+                android:summaryOff="Down BELOW hidden from Pulldown/Lockscreen" />
             <SwitchPreference
-                android:title="Animación de carga"
+                android:title="Battery bar animation"
                 android:key="battery_bar_animate"
                 android:defaultValue="false"
-                android:summaryOn="Animación de carga activada"
-                android:summaryOff="Animación de carga desactivada" />
+                android:summaryOn="Charging animation enabled"
+                android:summaryOff="Animation disabled" />
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:entries="@array/battery_bar_style_entries"
-                android:title="Estilo"
+                android:title="Battery bar style"
                 android:key="battery_bar_style"
                 android:defaultValue="0"
                 android:widgetLayout="@layout/round_more_icon"
                 android:entryValues="@array/battery_bar_style_values" />
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:entries="@array/battery_bar_thickness_entries"
-                android:title="Grosor"
+                android:title="Thickness of battery bar"
                 android:key="battery_bar_thickness"
                 android:defaultValue="1"
                 android:widgetLayout="@layout/round_more_icon"
@@ -145,7 +145,7 @@
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:title="Color"
                 android:key="battery_bar_color"
-                android:summary="Elegir color de Battery Bar"
+                android:summary="Choose color of battery bar"
                 android:defaultValue="#ffffff"
                 hexValue="true"
                 alphaSlider="true" />
@@ -153,14 +153,14 @@
     </PreferenceScreen>
     <PreferenceScreen
         android:icon="@drawable/ic_homeboton"
-        android:title="Botones Bloqueo y Home"
-        android:summary="Posicionar botón Bloqueo y Home en la Statusbar"
+        android:title="Lock and Home buttons"
+        android:summary="Position Lock and Home buttons on the StatusBar"
         android:widgetLayout="@layout/round_more_icon">
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Boton Bloqueo">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Lock button">
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:icon="@drawable/hct_bloqueo"
                 android:entries="@array/anlorlock_entries"
-                android:title="Posición Bloqueo"
+                android:title="Lock position"
                 android:key="anlor_lock"
                 android:widgetLayout="@layout/round_more_icon"
                 android:defaultValue="3"
@@ -168,16 +168,16 @@
         </PreferenceCategory>
         <CheckBoxPreference
             android:icon="@drawable/hct_bloqueo_centro"
-            android:title="Bloqueo Centro transparente"
+            android:title="Lock transparent center"
             android:key="cocoyaya_centerlock"
             android:defaultValue="false"
-            android:summaryOn="Activado"
-            android:summaryOff="Desactivado" />
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Boton Home">
+            android:summaryOn="Enabled"
+            android:summaryOff="Disabled" />
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Home button">
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:icon="@drawable/hct_home"
                 android:entries="@array/anlorhome_entries"
-                android:title="Posición Home"
+                android:title="Home position"
                 android:key="anlor_home"
                 android:widgetLayout="@layout/round_more_icon"
                 android:defaultValue="0"
@@ -187,15 +187,15 @@
     <PreferenceScreen
         android:icon="@drawable/ic_dynamicstatus"
         android:title="Dynamic Statusbar Color"
-        android:summary="Personaliza el gradiente de la Statusbar en las aplicaciones"
+        android:summary="Customize the gradient of the StatusBar in applications"
         android:widgetLayout="@layout/round_more_icon">
         <PreferenceCategory android:layout="@layout/preferences_category" android:title="Dynamic Statusbar Color">
             <SwitchPreference
                 android:title="Dynamic StatusBar Color"
                 android:key="dynamic_toggle"
                 android:defaultValue="false"
-                android:summaryOn="Características de Dynamic StatusBar han sido activadas"
-                android:summaryOff="Características de Dynamic StatusBar se han desactivado" />
+                android:summaryOn="Dynamic StatusBar features enabled"
+                android:summaryOff="Dynamic StatusBar features disabled" />
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:entries="@array/dsb_gradient_filter_entries"
                 android:title="@string/dynamic_status_bar_gradient_title"
@@ -225,176 +225,176 @@
     </PreferenceScreen>
     <PreferenceScreen
         android:icon="@drawable/ic_wifianalyzer"
-        android:title="Iconos Statusbar"
-        android:summary="Personalizar y posicionar los iconos de Notificaciones, Wifi, Datos y Batería en la Statusbar"
+        android:title="Icons Statusbar"
+        android:summary="Customize and position icons Notifications, Wifi, Data and Battery in the Statusbar"
         android:widgetLayout="@layout/round_more_icon">
         <com.hctrom.romcontrol.prefs.FilePreference
-            android:title="Activar colores nativos Statusbar"
+            android:title="Enable native colors"
             android:key="modcfg_nativeST_colors"
             android:defaultValue="false"
-            android:summaryOn="Activado \n*Iconos Statusbar con colores nativos (Stock)"
-            android:summaryOff="Desactivado \n*Usando colores personalizados de iconos en Statusbar" />
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Iconos Notificaciones Statusbar" />
+            android:summaryOn="Enable \n*StatusBar icons with native colors (Stock)"
+            android:summaryOff="Disabled \n*Using custom colors icons in StatusBar" />
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Icons Notifications Statusbar" />
             <SwitchPreference
-                android:title="Usar color global"
+                android:title="Use global color"
                 android:key="sb_global_toggle"
                 android:defaultValue="false"
-                android:summaryOn="Activado"
-                android:summaryOff="Desactivado" />
+                android:summaryOn="Enabled"
+                android:summaryOff="Disabled" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                android:title="Color global"
+                android:title="Statusbar Global Color"
                 android:key="sb_global_color"
                 android:defaultValue="#ffffff"
                 hexValue="true"
                 alphaSlider="true"
                 android:dependency="sb_global_toggle"
-                android:summary="Elegir el color global de los iconos en la Statusbar" />
-        <PreferenceCategory android:title="Notificaciones">
+                android:summary="Pick universal color" />
+        <PreferenceCategory android:title="Notifications">
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:icon="@drawable/ic_more_white_48dp"
-                android:title="Iconos Notificaciones"
+                android:title="Notification Icons Color"
                 android:key="statusbar_icon_color"
                 android:defaultValue="#ffffff"
                 hexValue="true"
                 alphaSlider="true"
-                android:summary="Volúmen, bluetooth, avisos, etc.." />
+                android:summary="Volume, bluetooth, popups, etc.." />
             <CheckBoxPreference
                 android:icon="@drawable/ic_alarm_white_48dp"
-                android:title="Icono de Alarma"
+                android:title="Alarm icon"
                 android:key="statusbar_hide_alarm"
                 android:defaultValue="true"
-                android:summaryOn="Visible"
-                android:summaryOff="Oculto" />
+                android:summaryOn="Shown"
+                android:summaryOff="Hidden" />
             <CheckBoxPreference
                 android:icon="@drawable/ic_bluetooth_white_48dp"
-                android:title="Icono de Bluetooth"
+                android:title="Bluetooth icon"
                 android:key="statusbar_hide_bluetooth"
                 android:defaultValue="true"
-                android:summaryOn="Visible"
-                android:summaryOff="Oculto" />
+                android:summaryOn="Shown"
+                android:summaryOff="Hidden" />
             <SwitchPreference
                 android:icon="@drawable/ic_privatemode"
-                android:title="Icono Modo Privado"
+                android:title="Personal/Private Mode Notification"
                 android:key="privatemode_toggle"
                 android:defaultValue="true"
-                android:summaryOn="Activado"
-                android:summaryOff="Desactivado" />
+                android:summaryOn="Notification enabled"
+                android:summaryOff="Notification disabled" />
         </PreferenceCategory>
-        <PreferenceCategory android:title="Wifi, Datos, Señal, Modo avión">
+        <PreferenceCategory android:title="Wifi, Data, Signal, Airplane mode">
             <com.hctrom.romcontrol.prefs.MyListPreference
                 android:entries="@array/SignalPositionName"
-                android:title="Posición de los iconos Wifi, Datos y Señal"
+                android:title="Signal Position"
                 android:key="leftsignal"
                 android:defaultValue="0"
                 android:widgetLayout="@layout/round_more_icon"
                 android:entryValues="@array/SignalPositionValue" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:icon="@drawable/ic_wifi_white_48dp"
-                android:title="Icono de Wifi"
+                android:title="WiFi Icon Color"
                 android:key="statusbar_wifi_color"
                 android:defaultValue="#ffffff"
                 hexValue="true"
                 alphaSlider="true"
-                android:summary="Elegir el color del icono Wifi" />
+                android:summary="Pick color of wifi icon" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:icon="@drawable/ic_signal_white_48dp"
-                android:title="Icono de Señal"
+                android:title="Signalbar Icon Color"
                 android:key="statusbar_signal_color"
                 android:defaultValue="#ffffff"
                 hexValue="true"
                 alphaSlider="true"
-                android:summary="Elegir el color de la señal" />
+                android:summary="Select color of signalbars" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:icon="@drawable/ic_4g"
-                android:title="Icono de Datos"
+                android:title="Data Icon Color"
                 android:key="statusbar_data_color"
                 android:defaultValue="#ffffff"
                 hexValue="true"
                 alphaSlider="true"
-                android:summary="Elegir el color de los datos (2G/3G/4G)" />
+                android:summary="3G/4G/LTE data icon color" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:icon="@drawable/ic_downloadbooster"
-                android:title="Icono Download booster"
-                android:summary="Elegir el color del icono Download booster"
+                android:title="Download booster icon"
+                android:summary="Choose icon color Download booster"
                 android:key="statusbar_db_color"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:icon="@drawable/ic_airplane"
-                android:title="Icono Modo avión"
+                android:title="Airplane Icon Color"
                 android:key="statusbar_airplane_color"
-                android:summary="Elegir el color del icono de modo avión"
+                android:summary="Pick color of airplane icon"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true" />
         </PreferenceCategory>
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Bateria Stock/3Minit">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Battery Stock/3Minit">
             <SwitchPreference
                 android:icon="@drawable/ic_percentage"
-                android:title="Porcentaje"
+                android:title="Percentage"
                 android:key="display_battery_percentage"
                 android:defaultValue="true"
-                android:summaryOn="El texto de la batería es visible"
-                android:summaryOff="El texto de la batería está oculto" />
+                android:summaryOn="The text of the battery is visible"
+                android:summaryOff="The text of the battery is hidden" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                android:title="Color porcentaje"
+                android:title="Color percentage"
                 android:dependency="display_battery_percentage"
                 android:key="battery_text_color"
-                android:summary="Elegir el color del porcentaje de la batería"
+                android:summary="Choose the color of the battery percentage"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true" />
             <SwitchPreference
                 android:icon="@drawable/ic_battery_80_white_48dp"
-                android:title="Batería Stock"
+                android:title="Battery Stock"
                 android:key="hide_battery_stock"
                 android:defaultValue="true"
-                android:summaryOn="Batería Stock es visible"
-                android:summaryOff="Batería Stock está oculto" />
+                android:summaryOn="Battery Stock is visible"
+                android:summaryOff="Battery Stock it is hidden" />
             <SwitchPreference
                 android:icon="@drawable/ic_battery_white_48dp_percentage"
-                android:title="Porcentaje dentro de la batería"
+                android:title="Display Percentage inside battery icon"
                 android:dependency="hide_battery_stock"
                 android:key="status_bar_show_battery_percent"
                 android:defaultValue="false"
-                android:summaryOn="El porcentaje dentro de la batería es visible"
-                android:summaryOff="El porcentaje dentro de la batería está oculto" />
+                android:summaryOn="Shown"
+                android:summaryOff="Hidden" />
             <SwitchPreference
-                android:title="Activar colores personalizados"
+                android:title="Enable custom colors"
                 android:key="link_stock_battery_icon_color"
                 android:dependency="hide_battery_stock"
                 android:defaultValue="false"
-                android:summaryOn="Activado"
-                android:summaryOff="Desactivado" />
+                android:summaryOn="Enabled"
+                android:summaryOff="Disabled" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                android:title="Color Batería Stock"
+                android:title="Stock Battery Icon Color"
                 android:key="battery_icon_color"
                 android:dependency="link_stock_battery_icon_color"
-                android:summary="Elegir el color de la batería stock"
+                android:summary="Choose the color of the battery stock"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true"/>
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                android:title="Color Batería Stock cargando"
+                android:title="Stock Battery Icon Charging Color"
                 android:key="battery_icon_charging_color"
                 android:dependency="link_stock_battery_icon_color"
-                android:summary="Elegir el color de la batería stock cuando está cargando"
+                android:summary="Set Stock battery icon charging color"
                 android:defaultValue="#02ff00"
                 alphaSlider="true"
                 hexValue="true"/>
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                android:title="Color Rayo de carga"
+                android:title="Stock Battery Icon Bolt Color"
                 android:key="battery_bolt_color"
                 android:dependency="link_stock_battery_icon_color"
-                android:summary="Elegir el color del rayo cuando está cargando en batería Stock"
+                android:summary="Set charging bolt color"
                 android:defaultValue="#141414"
                 alphaSlider="true"
                 hexValue="true"/>
             <PreferenceScreen
                 android:icon="@drawable/ic_3minitbattery"
                 android:widgetLayout="@layout/round_more_icon"
-                android:summary="Personalizar el estilo de la Batería en la Statusbar"
+                android:summary="Customize the style of the battery in the StatusBar"
                 android:title="3Minit Battery Settings">
                 <intent
                     android:icon="@drawable/ic_3minitbattery"
@@ -402,28 +402,28 @@
                     android:targetPackage="com.three.minit.minitbatterysettings.free" />
             </PreferenceScreen>
             <SwitchPreference
-                android:title="Batería 3Minit Battery"
+                android:title="3Minit Battery"
                 android:key="minit_battery_visible"
                 android:defaultValue="false"
-                android:summaryOn="3Minit Battery es visible"
-                android:summaryOff="3Minit Battery está oculto" />
+                android:summaryOn="Shown"
+                android:summaryOff="Hidden" />
         </PreferenceCategory>
     </PreferenceScreen>
     <PreferenceScreen
         android:icon="@drawable/ic_potatogradient"
         android:title="Potato Gradient"
         android:key="com.potato.gradientapp.MainActivity"
-        android:summary="Personalizar el fondo de la Statusbar con color sólido o gradiente"
+        android:summary="Customize the background of the StatusBar with solid color or gradient"
         android:widgetLayout="@layout/round_more_icon" />
     <PreferenceScreen
         android:icon="@drawable/ic_speedtest"
-        android:title="Tráfico de red"
-        android:summary="Controla el tráfico de datos en la Statusbar"
+        android:title="Network traffic"
+        android:summary="Customize Network traffic in the StatusBar"
         android:widgetLayout="@layout/round_more_icon">
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Trafico de red" />
-            <PreferenceCategory android:title="Preferencias generales">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Network traffic preferences" />
+            <PreferenceCategory android:title="Network data">
                 <com.hctrom.romcontrol.prefs.MyListPreference
-                    android:title="Tráfico de red en Statusbar"
+                    android:title="Displayed traffic info"
                     android:widgetLayout="@layout/round_more_icon"
                     android:key="network_traffic_state"
                     android:defaultValue="0"
@@ -431,23 +431,23 @@
                     android:entryValues="@array/traffic_state_values"
                     android:entries="@array/traffic_state_items"/>
                 <SwitchPreference
-                    android:title="Mostrar unidad"
-                    android:summaryOff="Bits por segundo (Por defecto)"
-                    android:summaryOn="Bytes por segundo"
+                    android:title="Display data in Bytes"
+                    android:summaryOff="Displayed in Bits (default)"
+                    android:summaryOn="Displayed in Bytes"
                     android:defaultValue="false"
                     android:key="network_traffic_unit"
                     android:dependency="network_traffic_state"/>
             </PreferenceCategory>
-            <PreferenceCategory android:title="Visibilidad de flechas">
+            <PreferenceCategory android:title="Arrows display preferences">
                 <SwitchPreference
-                    android:title="Mostrar flechas"
+                    android:title="Show traffic arrows"
                     android:key="network_traffic_show_arrows"
                     android:defaultValue="true"
-                    android:summaryOff="Oculto"
-                    android:summaryOn="Visible"
+                    android:summaryOff="Hidden"
+                    android:summaryOn="Shown"
                     android:dependency="network_traffic_state"/>
                 <com.hctrom.romcontrol.prefs.MyListPreference
-                    android:title="Posición"
+                    android:title="Arrows position"
                     android:widgetLayout="@layout/round_more_icon"
                     android:key="network_traffic_arrows_position"
                     android:dependency="network_traffic_show_arrows"
@@ -455,65 +455,66 @@
                     android:entryValues="@array/arrow_position_values"
                     android:entries="@array/arrow_position_entries"/>
             </PreferenceCategory>
-            <PreferenceCategory android:title="Más opciones">
+            <PreferenceCategory android:title="Display options">
                 <SwitchPreference
-                    android:title="Ocultar automáticamente"
+                    android:title="Autohide on low traffic"
                     android:key="network_traffic_autohide"
                     android:defaultValue="false"
-                    android:summary="Ocultar monitor de tráfico cuando no hay actividad"/>
+                    android:summaryOff="Displayed always"
+                    android:summaryOn="Autohide enabled"/>
                 <com.hctrom.romcontrol.prefs.SeekBarPreference
-                    android:title="Umbral de inactividad"
+                    android:title="Autohide threshold"
                     unitsRight="Kb/s"
                     android:max="100"
                     android:key="network_traffic_threshold"
                     android:defaultValue="10"
                     android:dependency="network_traffic_autohide"/>
                 <com.hctrom.romcontrol.prefs.MyListPreference
-                    android:title="Fuente"
+                    android:title="Font style"
                     android:widgetLayout="@layout/round_more_icon"
                     android:key="network_traffic_text_style"
                     android:defaultValue="0"
                     android:entries="@array/traffic_style_entries"
                     android:entryValues="@array/traffic_style_entry_values"/>
                 <com.hctrom.romcontrol.prefs.SeekBarPreference
-                    android:title="Tamaño"
+                    android:title="Text size scale factor"
                     android:key="network_traffic_scale"
                     android:max="10"
                     android:defaultValue="10"/>
             </PreferenceCategory>
-            <PreferenceCategory android:title="Color">
+            <PreferenceCategory android:title="Network traffic colors">
                 <SwitchPreference
-                    android:title="Distintos colores para cada elemento"
+                    android:title="Separate colors for elements"
                     android:key="network_traffic_global_color"
                     android:defaultValue="true"
-                    android:summaryOn="Activado"
-                    android:summaryOff="Desactivado"/>
+                    android:summaryOn="Enabled"
+                    android:summaryOff="Disabled"/>
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                    android:title="Color global"
-                    android:summary="Elegir el color global"
+                    android:title="Global color"
+                    android:summary="Select the global color"
                     android:key="network_traffic_color"
                     android:defaultValue="#ffffff"
                     alphaSlider="true"
                     hexValue="true" />
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                    android:title="Color texto subida"
-                    android:summary="Elegir el color del texto de subida"
+                    android:title="Upload text color"
+                    android:summary="Choose the upload text color"
                     android:defaultValue="#ffffff"
                     android:key="network_traffic_upload_color"
                     android:dependency="network_traffic_global_color"
                     alphaSlider="true"
                     hexValue="true" />
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                    android:title="Color texto bajada"
-                    android:summary="Elegir el color del texto de bajada"
+                    android:title="Download text color"
+                    android:summary="Choose the download text color"
                     android:defaultValue="#ffffff"
                     android:key="network_traffic_download_color"
                     android:dependency="network_traffic_global_color"
                     alphaSlider="true"
                     hexValue="true" />
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                    android:title="Color flechas"
-                    android:summary="Elegir el color de las flechas"
+                    android:title="Traffic arrows color"
+                    android:summary="Choose the color of the arrows"
                     android:key="network_traffic_arrow_color"
                     android:defaultValue="#ffffff"
                     android:dependency="network_traffic_global_color"
@@ -522,9 +523,9 @@
             </PreferenceCategory>
     </PreferenceScreen>
     <SwitchPreference
-        android:title="Golpe único para Panel de notificación"
+        android:title="Single swipe for Quickpanel"
         android:key="tweaks_qs_pulldown"
         android:defaultValue="false"
-        android:summaryOn="Si deslizas desde la derecha de la Statusbar se mostrará Quicksetting expandido"
-        android:summaryOff="La función de deslizar desde la derecha de la Statusbar está desactivada" />
+        android:summaryOn="From the right corner. Feature is enabled"
+        android:summaryOff="From the right corner. Feature is disabled" />
 </PreferenceScreen>

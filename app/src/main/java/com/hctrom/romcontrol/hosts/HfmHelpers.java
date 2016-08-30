@@ -143,12 +143,12 @@ public final class HfmHelpers {
     public static void showDialog(String message, final Context c) {
         AlertDialog dialog = new AlertDialog.Builder(c)
         .setMessage(message)
-        .setNeutralButton("FINALIZAR", new DialogInterface.OnClickListener() {
+        .setNeutralButton("FINALIZE", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) { 
                 dialog.dismiss();
             }
         })
-        .setPositiveButton("Eliminar un\nDOMINIO", new DialogInterface.OnClickListener() {
+        .setPositiveButton("Delete a\nDOMAIN", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();

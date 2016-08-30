@@ -182,7 +182,7 @@ public class CpuStateMonitor {
             }
         } catch (IOException e) {
             throw new CpuStateMonitorException(
-                    "Problema procesando el archivo time-in-states");
+                    "Problem processing the file time-in-states");
         }
     }
 }

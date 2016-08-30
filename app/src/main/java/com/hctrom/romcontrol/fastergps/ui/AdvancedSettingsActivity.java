@@ -79,7 +79,7 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
         LinearLayout root = (LinearLayout)findViewById(android.R.id.list).getParent().getParent().getParent();
         Toolbar bar = (Toolbar) LayoutInflater.from(this).inflate(R.layout.toolbar_default, root, false);
         root.addView(bar, 0); // insert at top
-        bar.setTitle("FasterGPS - Conf. Avanzada");
+        bar.setTitle("FasterGPS - Conf. Advanced");
         bar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
         bar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

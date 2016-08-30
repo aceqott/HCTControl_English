@@ -23,8 +23,8 @@ public class DialogoAlertaReiniciarSystemUI extends DialogFragment {
         theme.onActivityCreateSetTheme(getActivity());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setMessage("Es necesario reiniciar SystemUI para aplicar los cambios.\n\nDesea reiniciar SystemUI ahora?")
-                .setTitle("REINICIAR SYSTEM UI")
+        builder.setMessage("SystemUI to restart to apply the changes.\n\nRestart SystemUI now?")
+                .setTitle("REBOOT SYSTEM UI")
                 .setOnKeyListener(new Dialog.OnKeyListener() {
                     @Override
                     public boolean onKey(DialogInterface arg0, int keyCode, KeyEvent event) {
@@ -35,13 +35,13 @@ public class DialogoAlertaReiniciarSystemUI extends DialogFragment {
                         return true;
                     }
                 })
-                .setPositiveButton("SI", new DialogInterface.OnClickListener() {
+                .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                         Shell.getRebootAction("pkill com.android.systemui");
                     }
                 })
-                .setNegativeButton("AHORA NO", new DialogInterface.OnClickListener() {
+                .setNegativeButton("NOT NOW", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                     }

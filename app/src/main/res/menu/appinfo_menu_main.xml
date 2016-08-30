@@ -21,13 +21,13 @@
   <item
       android:id="@+id/action_search"
       android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
-      android:title="Buscar"
+      android:title="Search"
       app:actionViewClass="android.support.v7.widget.SearchView"
       app:showAsAction="always|collapseActionView"/>
 
   <item
       android:id="@+id/action_refresh"
       android:icon="@drawable/ic_reboot2"
-      android:title="Recargar"
+      android:title="Reload"
       app:showAsAction="ifRoom"/>
 </menu>

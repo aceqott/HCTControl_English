@@ -5,7 +5,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¡¡ AVISO !!"
+        android:text="¡¡ NOTICE !!"
         style="@style/AppTheme"
         android:textSize="40dp"
         android:layout_centerHorizontal="true"
@@ -34,7 +34,7 @@
         android:checked="false"
         android:layout_below="@+id/textAvisoBackup"
         android:layout_marginTop="10dp"
-        android:text="NO quiero volver a ver este mensaje"
+        android:text="I never want to see this message."
         android:textStyle="bold"
         android:textSize="12dp"
         android:layout_marginLeft="10dp" />

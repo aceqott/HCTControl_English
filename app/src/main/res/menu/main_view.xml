@@ -6,20 +6,20 @@
         <item
             android:id="@+id/option1"
             android:orderInCategory="100"
-            android:title="Activar Menú flotante"
+            android:title="Enable Floating Menu"
             android:checked="true">
         </item>
         <item
             android:id="@+id/option2"
             android:orderInCategory="100"
-            android:title="Mostrar Menú flotante"
+            android:title="Show Floating Menu"
             android:checked="true">
         </item>
     </group>
     <item
         android:id="@+id/action_reboot"
         android:orderInCategory="200"
-        android:title="Reiniciar"
+        android:title="Reboot"
         android:icon="@drawable/ic_reboot"
         app:showAsAction="ifRoom" >
 

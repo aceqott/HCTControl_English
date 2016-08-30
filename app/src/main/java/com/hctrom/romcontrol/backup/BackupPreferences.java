@@ -82,7 +82,7 @@ public class BackupPreferences {
                                                     if (file.exists()) {
                                                         file.delete();
                                                     }
-                                                    Toast.makeText(c.getApplicationContext(), "Backup creado en: " + filesdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(c.getApplicationContext(), "Backup created in: " + filesdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
                                                 }
                                             }
 

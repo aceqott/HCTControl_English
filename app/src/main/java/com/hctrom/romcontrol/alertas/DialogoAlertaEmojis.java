@@ -86,19 +86,19 @@ public class DialogoAlertaEmojis extends DialogFragment implements View.OnClickL
                 Shell.getRebootAction("" + sh.getEmojisStock());
                 editor.putString("emojis", "1");
                 editor.commit();
-                Toast.makeText(getActivity(), "Emojis Stock seleccionados", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Emojis Stock selected", Toast.LENGTH_LONG).show();
             }
             if(google.isChecked()){
                 Shell.getRebootAction("" + sh.getEmojisGoogle());
                 editor.putString("emojis", "2");
                 editor.commit();
-                Toast.makeText(getActivity(), "Emojis Google seleccionados", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Emojis Google selected", Toast.LENGTH_LONG).show();
             }
             if(ios.isChecked()){
                 Shell.getRebootAction("" + sh.getEmojisiOS());
                 editor.putString("emojis", "3");
                 editor.commit();
-                Toast.makeText(getActivity(), "Emojis iOS seleccionados", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Emojis iOS selected", Toast.LENGTH_LONG).show();
             }
             getDialog().dismiss();
             final DialogoAlertaReiniciar dialogo = new DialogoAlertaReiniciar();

@@ -66,7 +66,7 @@ public class AcercaDeFragment extends PreferenceFragment {
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 if (exiteConexionInternet()) {
-                    Toast.makeText(getActivity(), "Abriendo ...", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Opening ...", Toast.LENGTH_LONG).show();
                 }
                 startActivity(new Intent(getActivity(), VideoTutorial.class));
 

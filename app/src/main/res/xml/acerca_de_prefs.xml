@@ -6,19 +6,19 @@
         android:layout="@layout/my_logo"
         android:key="logo_hct">
     </PreferenceScreen>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Links Externos" >
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="External Links" >
         <PreferenceScreen
             android:icon="@drawable/hctnuevoforo"
-            android:title="HCTROM Web Oficial"
-            android:summary="Visite nuestra página oficial">
+            android:title="HCTROM Official Website"
+            android:summary="Visit our official website">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="http://hctrom.nuevoforo.es/" />
         </PreferenceScreen>
         <PreferenceScreen
             android:icon="@drawable/htcmania"
-            android:title="Hilo Oficial htcmania.com"
-            android:summary="Visite nuestro hilo oficial en Htcmania">
+            android:title="Official thread htcmania.com"
+            android:summary="Visit our official thread HTCMania">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="http://www.htcmania.com/showthread.php?t=1185009" />
@@ -27,24 +27,24 @@
     <PreferenceCategory android:layout="@layout/preferences_category" android:title="HCTeam S5" >
         <PreferenceScreen android:layout="@layout/acercade_hcteam_s5"  android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </PreferenceCategory>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Creditos" >
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Credits" >
         <PreferenceScreen android:layout="@layout/acercade_creditos_hct"  android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </PreferenceCategory>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Donativo" />
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Donative" />
     <PreferenceScreen
         android:icon="@drawable/ic_paypal"
         android:title="PayPal.Me"
-        android:summary="Mantener este proyecto arriba. Nos ayudas por mínima que sea la donación. Gracias por valorar nuestro trabajo.">
+        android:summary="Keep this project forward. You can help no matter how small the donation. Thank you for evaluating our work.">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=hctrom%2esoporte%40gmail%2ecom&amp;lc=ES&amp;item_name=HCTRom&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" />
     </PreferenceScreen>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="VideoTutorial" >
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Video-Tutorial" >
         <PreferenceScreen
-            android:title="Videotutorial"
+            android:title="Video-tutorial"
             android:icon="@drawable/ic_videoder"
             android:key="videotutorial_hct"
-            android:summary="Echa un vistazo a nuestro VideoTutorial de la HCTRom (Es necesaria conexión a internet)"
+            android:summary="Check out our Video-Tutorial HCTRom (Internet connection required.)"
             android:widgetLayout="@layout/round_more_icon" >
         </PreferenceScreen>
     </PreferenceCategory>

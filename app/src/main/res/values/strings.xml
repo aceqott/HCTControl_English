@@ -6,16 +6,16 @@
     <string-array name="nav_drawer_items">
         <item>Statusbar</item>
         <item>General</item>
-        <item>Panel de notificaciones</item>
-        <item>Pantalla de bloqueo</item>
-        <item>Sonidos y Notificaciones</item>
-        <item>Teléfono y Llamadas</item>
+        <item>Notifications panel</item>
+        <item>Lockscreen</item>
+        <item>Sounds y Notifications</item>
+        <item>Phone</item>
         <item>TW Launcher</item>
-        <item>Utilidades</item>
+        <item>Utilities</item>
         <item>Theme</item>
-        <item>Copiar/Restaurar</item>
+        <item>Backup/Restore</item>
         <item>Changelog</item>
-        <item>Acerca de</item>
+        <item>About</item>
     </string-array>
     <string-array name="clock_position_entries">
         <item>Right clock</item>
@@ -68,10 +68,10 @@
 
 
     <string-array name="sysbar_recent">
-        <item>Oculto</item>
-        <item>Botón Recientes</item>
-        <item>Botón Bloqueo</item>
-        <item>Botón Home</item>
+        <item>Hidden</item>
+        <item>Recent button</item>
+        <item>Lock button</item>
+        <item>Home button</item>
     </string-array>
     <string-array name="sysbar_recent_values">
         <item>0</item>
@@ -374,9 +374,9 @@
     </string-array>
     <string-array name="lockscreen_notif_entries">
         <item>2 (Stock)</item>
-        <item>3 máx.</item>
-        <item>4 máx.</item>
-        <item>5 máx.</item>
+        <item>3 max.</item>
+        <item>4 max.</item>
+        <item>5 max.</item>
     </string-array>
     <string-array name="lockscreen_notif_values">
         <item>2</item>
@@ -384,6 +384,7 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+
     <!-- clock statusbar-->
     <string name="right_clock">Right clock</string>
     <string name="center_clock">Center clock</string>
@@ -437,20 +438,20 @@
     <!-- Dinamyc status bar -->
     <string name="dynamic_status_bar_title">Dynamic status bar</string>
     <string name="dynamic_status_bar_color_title">Dynamic status bar color</string>
-    <string name="dynamic_status_bar_color_summary">Actualizar automáticamente el color de fondo de la Statusbar</string>
-    <string name="dynamic_status_bar_gradient_title">Gradiente</string>
-    <string name="dynamic_status_bar_gradient_summary">Superpone la Statusbar con gradiente</string>
-    <string name="dynamic_status_bar_filter_title">Oscurecimiento</string>
-    <string name="dynamic_status_bar_filter_summary">Superpone la Statusbar con un filtro de oscurecimiento</string>
-    <string name="dsb_gradient_filter_value_0">Desactivado</string>
-    <string name="dsb_gradient_filter_value_1">Sólo en el escritorio</string>
-    <string name="dsb_gradient_filter_value_2">En todas partes excepto el escritorio</string>
-    <string name="dsb_gradient_filter_value_3">Activado</string>
-    <string name="dynamic_status_bar_filter_value">Intensidad del filtro de oscurecimiento</string>
+    <string name="dynamic_status_bar_color_summary">Automatically update background color of the status bar</string>
+    <string name="dynamic_status_bar_gradient_title">Gradient</string>
+    <string name="dynamic_status_bar_gradient_summary">Overlay a gradient on the status bar</string>
+    <string name="dynamic_status_bar_filter_title">Darkening</string>
+    <string name="dynamic_status_bar_filter_summary">Overlay a darkening filter on the status bar</string>
+    <string name="dsb_gradient_filter_value_0">Off</string>
+    <string name="dsb_gradient_filter_value_1">Only on the desktop</string>
+    <string name="dsb_gradient_filter_value_2">Everywhere except the desktop</string>
+    <string name="dsb_gradient_filter_value_3">On</string>
+    <string name="dynamic_status_bar_filter_value">The intensity of the darkening filter</string>
 
 
     <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Presione el color a aplicar</string>
+    <string name="press_color_to_apply">Press the color to apply</string>
     <string-array name="theme_items">
         <item>Theme HCT Dark</item>
         <item>Theme Marshmallow Dark</item>
@@ -458,20 +459,20 @@
         <item>Theme TouchWiz Light</item>
         <item>Theme Material Dark</item>
     </string-array>
-    <string name="missing_su">El dispositivo no está rooteado o la aplicación negó los permisos de root.\n\nPor favor, confirma su estado root y vuelva a intentarlo más tarde.</string>
-    <string name="exit">Salir</string>
-    <string name="gaining_root">Adquiriendo acceso root. Por favor, espere...</string>
-    <string name="missing_su_title">No se pudo obtener acceso root</string>
+    <string name="missing_su">Your device is either not rooted or the app was denied root permissions.\n\nPlease check your root/su status and try again later.</string>
+    <string name="exit">Exit</string>
+    <string name="gaining_root">Acquiring root access. Please wait...</string>
+    <string name="missing_su_title">Could not get root access</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="theme_chooser_dialog_title">Elegir tema</string>
-    <string name="app_reboot_required_title">Mod requiere Reinicio SystemUI</string>
-    <string name="app_reboot_required_message">%1$s requiere hacer un reinicio para que los cambios surtan efecto.\n\n¿Reiniciar ahora?</string>
+    <string name="theme_chooser_dialog_title">Choose theme</string>
+    <string name="app_reboot_required_title">Mod requires Restart SystemUI</string>
+    <string name="app_reboot_required_message">%1$s required to make a restart for the changes to take effect.\n\nRestart now?</string>
 
     <!-- DPI CHANGER -->
-    <string name="dialog_title">Selecciona Dpi</string>
-    <string name="show_current_dpi">Cambiar DPI\nSelecciona una opción:</string>
+    <string name="dialog_title">Select Dpi</string>
+    <string name="show_current_dpi">Change DPI\nSelect an option:</string>
     <string-array name="dpi_dialog_items">
         <item>480 dpi</item>
         <item>460 dpi</item>
@@ -479,7 +480,7 @@
         <item>420 dpi</item>
         <item>400 dpi</item>
         <item>380 dpi</item>
-        <item>DPI Personalizado</item>
+        <item>Custom DPI</item>
     </string-array>
     <string-array name="dpi_dialog_values">
         <item>480</item>
@@ -488,200 +489,201 @@
         <item>420</item>
         <item>400</item>
         <item>380</item>
-        <item>DPI Personalizado</item>
+        <item>Custom DPI</item>
     </string-array>
     <string name="executed" translatable="false">###Executed###</string>
-    <string name="custom_dpi_input">Por favor, introduzca un valor comprendido entre 300 y 650</string>
-    <string name="text_hint">Introduce el valor de dpi aquí</string>
-    <string name="back_to_preset">Valores predefinidos</string>
-    <string name="illegal_value_title">Valor no permitido!</string>
-    <string name="text_illegal_value">Este dispositivo no es compatible con %1$s DPI.\n\nIntroduzca un valor comprendido entre 300 y 650 DPI.\n\nGracias!</string>
-    <string name="back_button_custom">Volver a DPI Personalizado</string>
-    <string name="credits_hct">Dar las gracias a @Wuby986 y @daxgirl, por esta fantástica herramienta que han construido. \nGracias especiales a @Palleiro por su ayuda. \n\nMuchísimas gracias a XDA Developers, excelente desarrolladores que comparten su trabajo. \nGracias a @tdunham, @daxgirl, @remuntada78, @talkingmonkeys, @ikrom, @asc1977, @Kamy, @kep2008, @stangdriver44, @OvrDriVE por sus tutoriales. \n\nGracias especiales a @tamirda, @thereassaad, @Sac23, @malbert16442, @Er. Aditya por su colaboración con la ROM. \n\nGracias como no a todo el @HCTeam: a todas las grandes personas que hay detrás de este equipo.</string>
+    <string name="custom_dpi_input">Please input value from 300 to 650</string>
+    <string name="text_hint">Input dpi value here</string>
+    <string name="back_to_preset">Preset Values</string>
+    <string name="illegal_value_title">Illegal value entered!</string>
+    <string name="text_illegal_value">DPI on this device cannot be set to %1$s DPI.\n\nPlease go back and set value from 300 to 650.\n\nThank you!</string>
+    <string name="back_button_custom">Back to Custom DPI</string>
+    <string name="credits_hct">Give thanks to @Wuby986 y @daxgirl, for this fantastic tool they have built. \nSpecial thanks to @Palleiro for your help. \n\nMany thanks to XDA Developers, excellent developers who share their work. \nThanks to @tdunham, @daxgirl, @remuntada78, @talkingmonkeys, @ikrom, @asc1977, @Kamy, @kep2008, @stangdriver44, @OvrDriVE for their guides. \n\nSpecial thanks to @tamirda, @thereassaad, @Sac23, @malbert16442, @Er. Aditya for his collaboration with the ROM. \n\nThanks, of course, the whole @HCTeam: to all the great people behind this team.</string>
 
     <!-- Changelog -->
-    <string name="changelog_full_title">Registro de cambios</string>
-    <string name="changelog_ok_button">Aceptar</string>
-    <string name="changelog_show_full">Más…</string>
-    <string name="changelog_title">Novedades HCTRom: </string>
-    <string name="changelog_version_format">Versión <ns1:g id="version_name">%s</ns1:g></string>
+    <string name="changelog_full_title">Changelog</string>
+    <string name="changelog_ok_button">OK</string>
+    <string name="changelog_show_full">More…</string>
+    <string name="changelog_title">What\'s New HCTRom: </string>
+    <string name="changelog_version_format">Version <ns1:g id="version_name">%s</ns1:g></string>
 
     <!-- Backup Settings -->
-    <string name="backup_dialog_title">Copiar/Restaurar Ajustes HCT</string>
-    <string name="confirm_backup">Desea realizar una copia de los Ajustes de HCTControl?</string>
+    <string name="backup_dialog_title">Backup/Restore HCT</string>
+    <string name="confirm_backup">Do you want a backup settings of the HCT Control?</string>
     <string name="ok">OK</string>
-    <string name="restore_next_boot">Restaurar en siguiente inicio?</string>
-    <string name="later">Después</string>
-    <string name="cancel">Cancelar</string>
-    <string name="confirm_restore">Desea restaurar una copia guardada de los Ajustes de HCTControl?</string>
+    <string name="restore_next_boot">Restore on next start?</string>
+    <string name="later">Later</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_restore">Do you want to restore a saved backup settings of the HCT Control?</string>
 
     <string name="licencia"><b>Copyright 2016 HCTeam&#x2122;, Inc.</b>\n\n
 
-        Esta aplicación ha sido modificada por el HCTeam&#x2122; bajo la licencia APACHE y ANDROID OPEN SOURCE PROJECT (AOSP) única y exclusivamente para las Roms de HCT.
-        Es totalmente gratuita, por lo que su venta queda totalmente prohibida sin el consentimiento de su creador.\n\n</string>
+        This application has been modified by the HCTeam&#x2122; under license APACHE y ANDROID OPEN SOURCE PROJECT (AOSP) only and exclusively for the Roms of HCT.
+        It is completely free, so that their sale is strictly prohibited without the consent of its creator.\n\n</string>
     <string name="licencia2">
 
-        Puedes obtener una copia de la licencia en \n\n
+        You can obtain a copy of the license \n\n
 
         <b>http://www.apache.org/licenses/LICENSE-2.0</b>\n\n
-        o
+        or
     </string>
 
     <!-- Host File Manager -->
-    <string name="hfm_disable_ads_title">Hosts Ads (publicidad)</string>
-    <string name="hfm_disable_ads_summary_on">Publicidad desactivada</string>
-    <string name="hfm_disable_ads_summary_off">Publicidad activada</string>
+    <string name="hfm_disable_ads_title">Hosts Ads</string>
+    <string name="hfm_disable_ads_summary_on">Disabled</string>
+    <string name="hfm_disable_ads_summary_off">Enabled</string>
     <string name="hfm_pref_screen_title">Ad blocker</string>
-    <string name="hfm_update_hosts">Actualizar archivo hosts</string>
-    <string name="hfm_update_hosts_summary">Descargar y aplicar hosts actualizado</string>
-    <string name="hfm_dialog_wait">Trabajando, por favor espere ...</string>
-    <string name="hfm_dialog_failed">Fallo actualizando archivo host. Por favor, inténtalo de nuevo.</string>
-    <string name="hfm_dialog_success">/4 fuentes hosts aplicadas con éxito!\n\nEn caso necesario, puede eliminar algún dominio en concreto de la lista de bloqueados.\n\nPara ello pulse en \"<b>ELIMINAR UN DOMINIO</b>\".\nDe lo contrario, pulse \"<b>FINALIZAR</b>\".\n\n</string>
-    <string name="hfm_dialog_conn_error">Error: No hay conexión a internet. Por favor, compruebe la conexión e intentelo de nuevo.</string>
-    <string name="hfm_text_domain">Introduzca un <b>Dominio</b> o parte de un Dominio, respetando espacios y se eliminará de la lista de bloqueados.\nEsto puede valer para casos en los que el bloqueador de anuncios no deja abrir una página que la base de datos considera \"<b>Spam</b>\".</string>
-    <string name="hfm_text2_domain">&#8226; <b>Ejemplo: -</b> si no tienes acceso al domino <b>ihatepops.com</b>, escriba dicho nombre o parte de él....</string>
+    <string name="hfm_update_hosts">Update file hosts</string>
+    <string name="hfm_update_hosts_summary">Download and apply hosts updated</string>
+    <string name="hfm_dialog_wait">Working, please wait ...</string>
+    <string name="hfm_dialog_failed">Failure to update host file. Try again please.</string>
+    <string name="hfm_dialog_success">/4 sources hosts successfully applied!\n\nIf necessary, you can delete any particular domain of the blocked list.\n\nTo do this click \"<b>DELETE A DOMAIN</b>\".\nOtherwise, press \"<b>FINALIZE</b>\".\n\n</string>
+    <string name="hfm_dialog_conn_error">Error: No internet access. Please check the connection and try again.</string>
+    <string name="hfm_text_domain">Enter a <b>Domain</b> or part of a Domain, respecting spaces and removed from the blocked list.\nThis may be true for cases where the ad blocker does not leave open a page that the database considered \"<b>Spam</b>\".</string>
+    <string name="hfm_text2_domain">&#8226; <b>Example: -</b> if you do not have access to the domain <b>ihatepops.com</b>, write that name or part of it...</string>
 
     <string name="version_name">dev</string>
-    <string name="aviso_backup">\n\nUna vez tengas todas las opciones de <b>HCT Control</b> configuradas al gusto, <u>recomendamos realizar una copia de los datos de configuración</u> para poder restaurarlos en cualquier momento.\n\n
-            Para realizar el <b>Backup</b>, tan solo hay que pulsar en el <u>menú lateral</u> la opción <b>\"Copiar/Restaurar\"</b> y luego en <b>\"Copiar\"</b>.</string>
+    <string name="aviso_backup">\n\nOnce you have all the options <b>HCT Control</b> configured to taste, <u>we recommend a backup of the configuration data</u> to restore them at any time.\n\n
+            To perform the backup, you just have to click on the <u>navigation menu</u> the option <b>\"Backup/Restore\"</b> and then <b>\"Backup\"</b>.</string>
 
     <!-- Edit Build.prop -->
-    <string name="add_prop">Añadir Propiedad</string>
-    <string name="save">Guardar</string>
-    <string name="discart">Discartar</string>
-    <string name="edit_key">Propiedad Key</string>
-    <string name="edit_name">Propiedad Name</string>
-    <string name="edit_prop_title">Editar/Añadir Propiedad</string>
-    <string name="unsaved_changes_title">Cambios NO guardados</string>
-    <string name="unsaved_changes_message">Te gustaría establecer esta propiedad?</string>
-    <string name="add">Añadir</string>
-    <string name="about">Acerca de</string>
+    <string name="add_prop">Add Property</string>
+    <string name="save">Save</string>
+    <string name="discart">Discard</string>
+    <string name="edit_key">Property Key</string>
+    <string name="edit_name">Property Name</string>
+    <string name="edit_prop_title">Edit/Add Property</string>
+    <string name="unsaved_changes_title">Unsaved Changes</string>
+    <string name="unsaved_changes_message">Would you like to set this property?</string>
+    <string name="add">Add</string>
+    <string name="about">About</string>
     <string name="backup">Backup</string>
-    <string name="restore">Restaurar</string>
+    <string name="restore">Restore</string>
 
     <!-- FasterGPS Activities -->
-    <string name="activity_advanced_settings">Opciones Avanzadas</string>
-    <string name="activity_help">Ayuda</string>
+    <string name="activity_advanced_settings">Advanced Settings</string>
+    <string name="activity_help">Help</string>
     <!-- FasterGPS Help -->
-    <string name="help_about_version">Versión:</string>
+    <string name="help_about_version">Version:</string>
     <!-- FasterGPS Buttons -->
-    <string name="button_close">Cerrar</string>
-    <string name="button_exit">Salir</string>
-    <string name="button_yes">Si</string>
+    <string name="button_close">Close</string>
+    <string name="button_exit">Exit</string>
+    <string name="button_yes">Yes</string>
     <string name="button_no">No</string>
     <!-- FasterGPS Dialogs -->
-    <string name="no_root_title">Necesita ser usuario Root</string>
-    <string name="revert_dialog_title">¿Regresar?</string>
-    <string name="revert_dialog">¿Quiere regresar a su antiguo archivo gps.conf?</string>
-    <string name="applying_successful">Se ha guardado gps.conf satisfactoriamente.</string>
+    <string name="no_root_title">Rooted Android required</string>
+    <string name="revert_dialog_title">Revert?</string>
+    <string name="revert_dialog">Do you want to revert to your old gps.conf?</string>
+    <string name="applying_successful">gps.conf was written successfully!</string>
     <!-- FasterGPS Preferences -->
-    <string name="pref_introduction">¿Qué hacer?</string>
-  <string name="pref_introduction_summary">Por favor seleccione un servidor NTP cercano a su posición actual.
-Cuanto más cerca esté, más rápido obtendrá su fijación GPS.
-FasterGPS inmediatamente escribirá sus ajustes.</string>
-    <string name="pref_ntp_current">Servidor actual:</string>
-    <string name="pref_revert">Regresar a su antiguo archivo gps.conf</string>
-  <string name="pref_revert_summary">Cuando FasterGPS comienza por primera vez, hace una copia de seguridad del fichero gps.conf.
-Usando el comando \'revert\' puede restaurar dicho fichero.</string>
-    <string name="pref_further_options">Otras opciones</string>
-    <string name="pref_ntp">Servidor NTP</string>
-    <string name="pref_ntp_continent">Continente</string>
-    <string name="pref_ntp_continent_summary">Seleccione su continente.</string>
+    <string name="pref_introduction">What to do?</string>
+    <string name="pref_introduction_summary">Please select a NTP Server that is near to your current position. The
+        nearer it is, the faster you get a GPS fix. FasterGPS will immediately write your settings.
+    </string>
+    <string name="pref_ntp_current">Current server:</string>
+    <string name="pref_revert">Revert to old gps.conf</string>
+    <string name="pref_revert_summary">When FasterGPS is started the first time, it backups your current gps.conf. Using
+        revert you can restore this one.
+    </string>
+    <string name="pref_further_options">Further options</string>
+    <string name="pref_ntp">NTP Server</string>
+    <string name="pref_ntp_continent">Continent</string>
+    <string name="pref_ntp_continent_summary">Select your continent!</string>
     <string-array name="pref_ntp_continent_entries">
-        <item>Ninguno seleccionado</item>
-        <item>Servidor personalizado</item>
-        <item>Europa</item>
-        <item>Oceanía</item>
+        <item>- Nothing selected -</item>
+        <item>- Custom Server -</item>
+        <item>Europe</item>
+        <item>Oceania</item>
         <item>Asia</item>
-        <item>Norteamérica</item>
-        <item>Suramérica</item>
-        <item>África</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Africa</item>
     </string-array>
-    <string name="pref_ntp_region">Región</string>
-    <string name="pref_ntp_region_summary">Seleccione una región cercana a usted.</string>
+    <string name="pref_ntp_region">Region</string>
+    <string name="pref_ntp_region_summary">Select a region close to you!</string>
     <string-array name="pref_ntp_region_entries_europe">
-        <item>Ninguno seleccionado</item>
+        <item>- Nothing selected -</item>
         <item>Austria</item>
-        <item>Suiza</item>
-        <item>Alemania</item>
-        <item>Dinamarca</item>
-        <item>España</item>
-        <item>Francia</item>
-        <item>Italia</item>
-        <item>Luxemburgo</item>
-        <item>Países Bajos</item>
-        <item>Noruega </item>
-        <item>Polonia</item>
-        <item>Suecia</item>
-        <item>Eslovenia</item>
-        <item>Reino Unido</item>
-        <item>Finlandia</item>
-        <item>Irlanda</item>
-        <item>Rusia</item>
-        <item>Bélgica</item>
+        <item>Switzerland</item>
+        <item>Germany</item>
+        <item>Denmark</item>
+        <item>Spain</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Luxembourg</item>
+        <item>Netherlands</item>
+        <item>Norway</item>
+        <item>Poland</item>
+        <item>Sweden</item>
+        <item>Slovenia</item>
+        <item>United Kingdom</item>
+        <item>Finland</item>
+        <item>Ireland</item>
+        <item>Russian Federation</item>
+        <item>Belgium</item>
         <item>Portugal</item>
-        <item>Grecia</item>
-        <item>Hungría</item>
+        <item>Greece</item>
+        <item>Hungary</item>
         <item>Bulgaria</item>
-        <item>Rumanía</item>
-        <item>República Checa</item>
+        <item>Romania</item>
+        <item>Czech Republic</item>
         <item>Yugoslavia</item>
         <item>Estonia</item>
-        <item>Bielorrusia</item>
-        <item>Eslovaquia</item>
-        <item>Ucrania</item>
-        <item>Lituania</item>
+        <item>Belarus</item>
+        <item>Slovakia</item>
+        <item>Ukraine</item>
+        <item>Lithuania</item>
         <item>Macedonia</item>
-        <item>Moldavia </item>
-        <item>Letonia</item>
-        <item>Croacia</item>
-        <item>República de Serbia</item>
-        <item>Bosnia y Herzegovina</item>
+        <item>Moldova</item>
+        <item>Latvia</item>
+        <item>Croatia</item>
+        <item>Republic of Serbia</item>
+        <item>Bosnia and Herzegovina</item>
         <item>Armenia</item>
     </string-array>
     <string-array name="pref_ntp_region_entries_asia">
-        <item>- Ninguno seleccionado -</item>
-        <item>Filipinas</item>
-        <item>Malasia</item>
-        <item>Turquía</item>
-        <item>Singapur</item>
+        <item>- Nothing selected -</item>
+        <item>Philippines</item>
+        <item>Malaysia</item>
+        <item>Turkey</item>
+        <item>Singapore</item>
         <item>India</item>
         <item>Hong Kong</item>
-        <item>Emiratos Árabes Unidos</item>
-        <item>Japón</item>
+        <item>United Arab Emirates</item>
+        <item>Japan</item>
         <item>Bangladesh</item>
         <item>Israel</item>
-        <item>Corea</item>
-        <item>Tailandia</item>
-        <item>Irán</item>
-        <item>Taiwán</item>
+        <item>Korea</item>
+        <item>Thailand</item>
+        <item>Iran</item>
+        <item>Taiwan</item>
         <item>China</item>
         <item>Indonesia</item>
         <item>Vietnam</item>
-        <item>Pakistán</item>
-        <item>Omán</item>
-        <item>Uzbekistán</item>
+        <item>Pakistan</item>
+        <item>Oman</item>
+        <item>Uzbekistan</item>
         <item>Sri Lanka</item>
-        <item>Kirguistán</item>
-        <item>Camboya</item>
+        <item>Kyrgyzstan</item>
+        <item>Cambodia</item>
         <item>Qatar</item>
-        <item>Arabia Saudita</item>
+        <item>Saudi Arabia</item>
         <item>Iraq</item>
-        <item>Kazajstán</item>
+        <item>Kazakhstan</item>
     </string-array>
     <string-array name="pref_ntp_region_entries_oceania">
-        <item>- Ninguno seleccionado  -</item>
+        <item>- Nothing selected -</item>
         <item>Australia</item>
-        <item>Nueva Zealanda</item>
-        <item>Nueva Caledonia</item>
+        <item>New Zealand</item>
+        <item>New Caledonia</item>
     </string-array>
     <string-array name="pref_ntp_region_entries_north_america">
-        <item>- Nada seleccionado -</item>
-        <item>Canadá</item>
-        <item>Estados Unidos</item>
-        <item>México</item>
+        <item>- Nothing selected -</item>
+        <item>Canada</item>
+        <item>United States</item>
+        <item>Mexico</item>
         <item>Guatemala</item>
-        <item> Panamá</item>
+        <item>Panama</item>
         <item>Bahamas</item>
         <item>Costa Rica</item>
         <item>El Salvador</item>
@@ -701,55 +703,57 @@ Usando el comando \'revert\' puede restaurar dicho fichero.</string>
         <item>Madagascar</item>
         <item>Uganda</item>
     </string-array>
-    <string name="pref_ntp_custom">Personalizado</string>
-    <string name="pref_ntp_custom_summary">Si el servidor personalizado es seleccionado, puedes definir un servidor NTP personalizado.</string>
-    <string name="pref_advanced_settings">Ir a opciones avanzadas</string>
-    <string name="pref_help">Ayuda</string>
-    <string name="pref_about">Acerca de</string>
-    <string name="pref_donations">Donaciones</string>
-    <string name="pref_current_value">Valor:</string>
+    <string name="pref_ntp_custom">Custom</string>
+    <string name="pref_ntp_custom_summary">If custom server is selected you can define a custom NTP Server here.
+    </string>
+    <string name="pref_advanced_settings">Go to advanced settings</string>
+    <string name="pref_help">Help</string>
+    <string name="pref_about">About</string>
+    <string name="pref_donations">Donations</string>
+    <string name="pref_current_value">Value:</string>
     <string name="pref_category_general">General</string>
-    <string name="pref_category_xtra">Servidor XTRA</string>
+    <string name="pref_category_xtra">XTRA Server</string>
     <string name="pref_category_supl">AGPS SUPL</string>
-    <string name="pref_category_c2k">AGPS SUPL</string>
+    <string name="pref_category_c2k">AGPS C2K</string>
     <string name="pref_category_carrier">AGPS Carrier</string>
-    <string name="pref_category_other">Otros</string>
-    <string name="DEBUG_LEVEL">Debug Levels: 0=ninguno, 1=Errores, 2=Advertencias, 3=Info, 4=Depuración, 5=Detallado</string>
-    <string name="INTERMEDIATE_POS">Informar de las posiciones intermedias: 1=Activar, 0=Desactivar</string>
-  <string name="ACCURACY_THRES">Umbral de exactitud para posiciones intermedias, posiciones menos exactas son ignoradas:
-0 para dar de paso a todas las posiciones.</string>
-    <string name="REPORT_POSITION_USE_SUPL_REFLOC">Informar de las localizaciones supl ref como posición: 1=activar, 0=desactivar</string>
-    <string name="ENABLE_WIPER">Wiper (posicionamento wifi): 1=activar, 0=desactivar</string>
+    <string name="pref_category_other">Other</string>
+    <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose</string>
+    <string name="INTERMEDIATE_POS">Intermediate position report: 1=Enable, 0=Disable</string>
+    <string name="ACCURACY_THRES">Accuracy threshold for intermediate positions, less accurate positions are ignored: 0
+        for passing all positions
+    </string>
+    <string name="REPORT_POSITION_USE_SUPL_REFLOC">Report supl ref location as position: 1=enable, 0=disable</string>
+    <string name="ENABLE_WIPER">Wiper (wifi positioning): 1=enable, 0=disable</string>
     <string name="SUPL_HOST"></string>
     <string name="SUPL_PORT"></string>
     <string name="SUPL_NO_SECURE_PORT"></string>
     <string name="SUPL_SECURE_PORT"></string>
     <string name="C2K_HOST"></string>
     <string name="C2K_PORT"></string>
-    <string name="CURRENT_CARRIER">valores posibles: comunes</string>
-    <string name="DEFAULT_AGPS_ENABLE">valores posibles: TRUE/FALSE</string>
-    <string name="DEFAULT_SSL_ENABLE">valor posible: TRUE/FALSE</string>
-    <string name="DEFAULT_USER_PLANE">TRUE para \"Plano de usuario\", FALSE para \"Plano de control</string>
+    <string name="CURRENT_CARRIER">possible values: common</string>
+    <string name="DEFAULT_AGPS_ENABLE">possible values: TRUE/FALSE</string>
+    <string name="DEFAULT_SSL_ENABLE">possible value: TRUE/FALSE</string>
+    <string name="DEFAULT_USER_PLANE">TRUE for "User Plane", FALSE for "Control Plane"</string>
     <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for
         FasterGPS.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your
         device on www.cyanogenmod.com or other Android websites.
     </string>
 
     <!-- 6thGear TWSwipe -->
-    <string name="title_activity_reset_dialog">Restablecer acción deslizante</string>
-    <string name="swipe_reset_title">Restablecer aplicación deslizante</string>
-    <string name="swipe_reset_no_prefs">Sus preferencias de aplicación deslizante están vacías, ¿Le gustaría establecer una ahora?</string>
-    <string name="swipe_reset_message">"Su acción deslizante predeterminado actual se establece en %1$s.\n\nPara restablecer las preferencias y establecer una acción deslizante diferente, por favor pulse OK"</string>
-    <string name="prefs_saved_dialog_title">Preferencia de guardado</string>
-    <string name="reset">Restablecer</string>
-    <string name="prefs_saved_app_dialog_message">"Su aplicación deslizante predeterminado se establece en %1$s.\n\nPara confirmar pulse OK.\n\nPara elegir una aplicación diferente presione RESTABLECER"</string>
-    <string name="prefs_saved_shortcut_dialog_message">"Su atajo deslizante predeterminado se establece en %1$s.\n\nPara confirmar pulse OK.\n\nPara elegir una aplicación diferente presione RESTABLECER"</string>
-    <string name="shortcut_chooser_title">Elija atajo para la acción deslizante</string>
-    <string name="progress_message">Cargando lista de aplicaciones...</string>
-    <string name="set_shortcut_title">Para establecer un atajo personalizado, haga click en el botón de abajo:</string>
-    <string name="set_app_title">O elija una aplicación de la lista:</string>
-    <string name="set_shortcut_button">Establecer atajo personalizado</string>
-    <string name="set_up_twswipe">6thGear TWSwipe</string>
+    <string name="title_activity_reset_dialog">Swipe Reset</string>
+    <string name="swipe_reset_title">Reset swipe action</string>
+    <string name="swipe_reset_no_prefs">Your swipe app preferences are empty. Would you like to set  a default swipe behaviour now?</string>
+    <string name="swipe_reset_message">"Your current default swipe action is set to %1$s\n\nTo reset the preferences and set a different swipe action, please click RESET"</string>
+    <string name="prefs_saved_dialog_title">Preference Saved</string>
+    <string name="reset">Reset</string>
+    <string name="prefs_saved_app_dialog_message">"Your swipe default app was set to %1$s.\n\nTo confirm press OK.\n\nTo choose a different app press RESET"</string>
+    <string name="prefs_saved_shortcut_dialog_message">"Your swipe default shortcut was set to %1$s.\n\nTo confirm press OK.\n\nTo choose a different app press RESET"</string>
+    <string name="shortcut_chooser_title">Choose Shortcut for Swipe Action</string>
+    <string name="progress_message">Loading app list...</string>
+    <string name="set_shortcut_title">To set custom shortcut, click the button below:</string>
+    <string name="set_app_title">Or choose an app from the list:</string>
+    <string name="set_shortcut_button">Set Custom Shortcut</string>
+    <string name="set_up_twswipe">Set Up TwSwipe</string>
 
     <!-- CatLog -->
     <string name="log_level_debug">Debug</string>
@@ -799,80 +803,80 @@ Usando el comando \'revert\' puede restaurar dicho fichero.</string>
     <!-- translateable strings-->
 
 
-    <string name="about_catlog">Acerca de CatLog</string>
+    <string name="about_catlog">About CatLog</string>
 
-    <string name="add_filter">Agregar Filtro</string>
-    <string name="add_filter_ellipsis">Agregar Filtro…</string>
+    <string name="add_filter">Add Filter</string>
+    <string name="add_filter_ellipsis">Add Filter…</string>
 
-    <string name="are_you_sure">%d archivo(s) será eliminado.</string>
+    <string name="are_you_sure">%d file(s) will be deleted.</string>
 
-    <string name="as_attachment">Como archivo adjunto</string>
-    <string name="as_text">Como texto</string>
+    <string name="as_attachment">As Attachment</string>
+    <string name="as_text">As Text</string>
 
-    <string name="checkbox_never_show_partial_select_help">No mostrar de nuevo</string>
+    <string name="checkbox_never_show_partial_select_help">Don\'t show again</string>
 
-    <string name="copied_to_clipboard">Copiar al portapapeles.</string>
+    <string name="copied_to_clipboard">Copied to clipboard.</string>
 
-    <string name="copy_to_clipboard">Copiar al portapapeles</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
 
-    <string name="default_in_parens">(Por defecto)</string>
-    <string name="delete_all">Eliminar todo</string>
-    <string name="delete_saved_log">Eliminado Logs guardados</string>
-    <string name="delimiter">, </string>
-    <string name="dialog_compiling_log">Compilación de log…</string>
-    <string name="dialog_for_donate">Para habilitar <b>esquema de\ncolores</b>, descargar\n<a href="market://details?id=com.hctrom.romcontrol.logcat.donate">CatLog Donate</a></string>
-    <string name="dialog_for_widget">Para mostrar<b>widget</b>,\nen el escritorio → Pulsación\nLarga → Seleccionar Widgets</string>
-    <string name="dialog_initializing_recorder">Iniciando grabación…</string>
-    <string name="dialog_loading_updates">Actualizando…</string>
-    <string name="dialog_partial_select_explanation">1. Seleccione la <b>primera</b> línea.\n2. A continuación, seleccione la <b>última</b> línea.</string>
-    <string name="dialog_please_wait">Por favor, espere</string>
-    <string name="enter_filename">Introduzca el nombre del archivo para guardar:</string>
-    <string name="enter_good_filename">Por favor, introduzca un nombre de archivo válido.</string>
-    <string name="files_deleted">%d archivo(s) eliminado.</string>
-    <string name="filter_choice">Buscar by</string>
+    <string name="default_in_parens">(Default)</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_saved_log">Delete Saved Logs</string>
+    <string name="delimiter">, </string>
+    <string name="dialog_compiling_log">Compiling log…</string>
+    <string name="dialog_for_donate">For <b>bonus color\nschemes</b>, download\n<a href="market://details?id=com.nolanlawson.logcat.donate">CatLog Donate</a></string>
+    <string name="dialog_for_widget">For a <b>widget</b>,\ndo Home → Long\npress → Widgets</string>
+    <string name="dialog_initializing_recorder">Loading recorder…</string>
+    <string name="dialog_loading_updates">Loading updates…</string>
+    <string name="dialog_partial_select_explanation">1. Select the <b>first</b> line.\n2. Then select the <b>last</b> line.</string>
+    <string name="dialog_please_wait">Please wait</string>
+    <string name="enter_filename">Enter filename to save:</string>
+    <string name="enter_good_filename">Please enter a valid filename.</string>
+    <string name="files_deleted">%d file(s) deleted.</string>
+    <string name="filter_choice">Search by</string>
     <string name="filter_choice_pid">Process id</string>
-    <string name="filter_choice_tag">Etiqueta</string>
-    <string name="filter_text_colon">Texto del filtro:</string>
-    <string name="first_run_pref_summary">Mostrar mensaje de introducción al abrir.</string>
-    <string name="first_run_pref_title">Mensaje de introducción</string>
-    <string name="first_run_title">Bienvenido a CatLog!</string>
-    <string name="log_cleared">Logs eliminados. Pulsación prolongada para volver a cargar.</string>
+    <string name="filter_choice_tag">Tag</string>
+    <string name="filter_text_colon">Filter text:</string>
+    <string name="first_run_pref_summary">Show introductory message again.</string>
+    <string name="first_run_pref_title">Reset Introduction</string>
+    <string name="first_run_title">Welcome to CatLog!</string>
+    <string name="log_cleared">Logs cleared. Long-press to reload.</string>
     <string name="log_level">Log Level</string>
     <string name="log_level_colon">Log level:</string>
-    <string name="log_recording_started">Grabación de Log iniciada.</string>
-    <string name="log_saved">Log guardado en sdcard/HCTControl/CatLog.</string>
-    <string name="main_edit_text_hint">Buscar logs</string>
-    <string name="manage_saved_logs">Administrar Logs guardados</string>
-    <string name="menu_title_partial_select">Selección parcial</string>
-    <string name="no_saved_logs">No se encuentra Logs guardados</string>
-    <string name="notification_subtext">Seleccione para detener la grabación.</string>
-    <string name="notification_ticker">Grabación de Log iniciada</string>
-    <string name="notification_title">Grabación del Log en progreso</string>
-    <string name="open">Abrir</string>
-    <string name="open_log">Abrir Log</string>
-    <string name="play_x1_log">Iniciar %s Log</string>
-    <string formatted="false" name="play_x2_log">Iniciar %s, %s</string>
-    <string name="play_x3_log">Iniciar todos los Log</string>
-    <string name="pref_buffer_choice_events">Eventos</string>
-    <string name="pref_buffer_choice_main">Principal</string>
+    <string name="log_recording_started">Log recording started.</string>
+    <string name="log_saved">Log saved.</string>
+    <string name="main_edit_text_hint">Search logs</string>
+    <string name="manage_saved_logs">Manage Saved Logs</string>
+    <string name="menu_title_partial_select">Select Partial</string>
+    <string name="no_saved_logs">No saved logs found.</string>
+    <string name="notification_subtext">Select to stop recording.</string>
+    <string name="notification_ticker">Log recording started</string>
+    <string name="notification_title">Log recording in progress</string>
+    <string name="open">Open</string>
+    <string name="open_log">Open Log</string>
+    <string name="play_x1_log">Play %s Log</string>
+    <string formatted="false" name="play_x2_log">Play %s, %s</string>
+    <string name="play_x3_log">Play All Logs</string>
+    <string name="pref_buffer_choice_events">Events</string>
+    <string name="pref_buffer_choice_main">Main</string>
     <string name="pref_buffer_choice_radio">Radio</string>
-    <string name="pref_buffer_none_checked_error">Por favor, compruebe al menos un buffer.</string>
+    <string name="pref_buffer_none_checked_error">Please check at least one buffer.</string>
     <string name="pref_buffer_title">Log Buffer(s)</string>
-    <string name="pref_cat_advanced">Avanzado</string>
-    <string name="pref_cat_appearance">Apariencia</string>
-    <string name="pref_cat_configuration">Configuración</string>
-    <string name="pref_default_log_level_summary">Se aplicará al inicio, al abrir archivos, y cuando esté grabando (%s)</string>
-    <string name="pref_default_log_level_title">Log Level por defecto</string>
-    <string formatted="false" name="pref_display_limit_summary">Mostrar sólo los últimos %d logs, para evitar errores. (Por defecto: %s)</string>
-    <string name="pref_display_limit_title">Limitar visualización Log</string>
-    <string name="pref_expanded_by_default_summary">Mostrar el texto completo del registro de forma predeterminada.</string>
-    <string name="pref_expanded_by_default_title">Expandir de forma predeterminada</string>
-    <string name="pref_log_line_period_error">Por favor, introduzca un número entero entre 1 y 1000.</string>
-    <string formatted="false" name="pref_log_line_period_summary">Cuando está grabando, escribe en la tarjeta SD cada %d línea(s) (Por defecto: %s).</string>
-    <string name="pref_log_line_period_title">Periodo de escritura</string>
-    <string name="pref_show_timestamp_summary">Mostrar el id de los procesos y Fecha y hora cuando se expande.</string>
-    <string name="pref_show_timestamp_title">Mostrar Pid &amp; Fecha y hora</string>
-    <string name="pref_text_size_title">Tamaño del texto</string>
+    <string name="pref_cat_advanced">Advanced</string>
+    <string name="pref_cat_appearance">Appearance</string>
+    <string name="pref_cat_configuration">Configuration</string>
+    <string name="pref_default_log_level_summary">Log level at startup, when opening files, and when recording (%s)</string>
+    <string name="pref_default_log_level_title">Default Log Level</string>
+    <string formatted="false" name="pref_display_limit_summary">Show only the last %d logs, to avoid OutOfMemoryErrors. (Default: %s)</string>
+    <string name="pref_display_limit_title">Log Display Limit</string>
+    <string name="pref_expanded_by_default_summary">Show full log text by default.</string>
+    <string name="pref_expanded_by_default_title">Expand by Default</string>
+    <string name="pref_log_line_period_error">Please enter an integer between 1 and 1000.</string>
+    <string formatted="false" name="pref_log_line_period_summary">When recording, write to SD card every %d line(s) (default: %s).</string>
+    <string name="pref_log_line_period_title">Write Period</string>
+    <string name="pref_show_timestamp_summary">Show process id and timestamp when expanded.</string>
+    <string name="pref_show_timestamp_title">Show Pid &amp; Timestamp</string>
+    <string name="pref_text_size_title">Text Size</string>
     <string name="pref_theme_choice_android_name">Android</string>
     <string name="pref_theme_choice_att_name">Ma Bell</string>
     <string name="pref_theme_choice_dark_name">Dark</string>
@@ -880,87 +884,93 @@ Usando el comando \'revert\' puede restaurar dicho fichero.</string>
     <string name="pref_theme_choice_sprint_name">Big Yellow</string>
     <string name="pref_theme_choice_tmobile_name">T-Mo</string>
     <string name="pref_theme_choice_verizon_name">Big Red</string>
-    <string name="pref_theme_summary_free">Requiere donación.</string>
-    <string name="pref_theme_title">Esquema de colores</string>
-    <string name="record_log">Grabar Log</string>
-    <string name="recording_in_progress">Ya existe grabación en curso.</string>
-    <string name="save_as">Guardar cómo…</string>
-    <string name="save_log">Guardar Log</string>
-    <string name="sd_card_not_found">La tarjeta SD no se encuentra.</string>
-    <string name="select_logs_to_delete">Seleccione el Log que desea eliminar.</string>
-    <string name="send_as_attachment">Enviar como archivo adjunto</string>
-    <string name="send_as_text">Enviar como texto</string>
-    <string name="send_log">Enviar</string>
-    <string name="send_log_title">Enviar Log</string>
-    <string name="settings">Ajustes</string>
-    <string name="simultaneous"> (Simultáneo)</string>
-    <string name="start_recording_log">Grabar</string>
-    <string name="stop_recording_log">Parar grabación</string>
-    <string name="subject_log_report">Reportar Log</string>
-    <string name="text_filter_ellipsis">Filtro…</string>
-    <string name="text_filter_text">Texto del filtro</string>
-    <string name="text_include_device_info">Incluir información del dispositivo</string>
-    <string name="text_size_large_name">Grande (14pt)</string>
-    <string name="text_size_medium_name">Normal (12pt)</string>
-    <string name="text_size_small_name">Pequeño (10pt)</string>
-    <string name="text_size_xlarge_name">Muy grande (16pt)</string>
-    <string name="text_size_xsmall_name">Muy pequeño (8pt)</string>
-    <string name="title_filter">Filtro</string>
-    <string name="title_filters">Filtros</string>
-    <string formatted="false" name="toast_invalid_display_limit">Por favor, introduzca un número válido entre %d y %d.</string>
-    <string name="toast_invalid_level">Level name no válido: %s</string>
-    <string name="toast_invalid_selection">Selección no válida.  Por favor, inténtelo de nuevo.</string>
-    <string name="toast_log_truncated">Log demasiado grande; mostrando últimas %d líneas.</string>
-    <string name="toast_no_root">No se pudo obtener acceso root.  Sólo podrá ver Logs propios de CatLog\'s.</string>
-    <string name="toast_pref_changed_restart_required">Ajustes actualizado. Reinicie CatLog para ver los cambios.</string>
-    <string name="toast_request_root">CatLog requiere root (superuser) para tener acceso a leer Logs.</string>
-    <string name="toast_started_select_partial">Modo de selección parcial activado</string>
-    <string name="unable_to_save_log">No se puede guardar el registro. ¿Ha introducido un nombre de archivo válido?</string>
-    <string name="version">Versión %s</string>
-    <string name="widget_recording_in_progress">Grabando…</string>
-    <string name="widget_start_recording">Grabar Log</string>
+    <string name="pref_theme_summary_free">Requires donate version.</string>
+    <string name="pref_theme_title">Color Scheme</string>
+    <string name="record_log">Record Log</string>
+    <string name="recording_in_progress">Recording already in progress.</string>
+    <string name="save_as">Save As…</string>
+    <string name="save_log">Save Log</string>
+    <string name="sd_card_not_found">SD card not found.</string>
+    <string name="select_logs_to_delete">Select which logs to delete.</string>
+    <string name="send_as_attachment">Send as Attachment</string>
+    <string name="send_as_text">Send as Text</string>
+    <string name="send_log">Send</string>
+    <string name="send_log_title">Send Log</string>
+    <string name="settings">Settings</string>
+
+    <string name="simultaneous"> (Simultaneous)</string>
+
+    <string name="start_recording_log">Record</string>
+
+    <string name="stop_recording_log">Stop Recording</string>
+
+    <string name="subject_log_report">Log report</string>
+    <string name="text_filter_ellipsis">Filter…</string>
+    <string name="text_filter_text">Filter text</string>
+    <string name="text_include_device_info">Include device information</string>
+    <string name="text_size_large_name">Large (14pt)</string>
+    <string name="text_size_medium_name">Medium (12pt)</string>
+    <string name="text_size_small_name">Small (10pt)</string>
+    <string name="text_size_xlarge_name">Extra Large (16pt)</string>
+    <string name="text_size_xsmall_name">Extra Small (8pt)</string>
+    <string name="title_filter">Filter</string>
+    <string name="title_filters">Filters</string>
+    <string formatted="false" name="toast_invalid_display_limit">Please enter a valid number between %d and %d.</string>
+    <string name="toast_invalid_level">Invalid level name: %s</string>
+    <string name="toast_invalid_selection">Invalid selection.  Please try again.</string>
+    <string name="toast_log_truncated">Log too large; showing last %d lines.</string>
+    <string name="toast_no_root">Could not obtain root.  You will only see CatLog\'s own logs.</string>
+    <string name="toast_pref_changed_restart_required">Setting updated. Restart CatLog to see the changes.</string>
+    <string name="toast_request_root">CatLog requires root (superuser) access to read logs.</string>
+    <string name="toast_started_select_partial">Select Partial mode enabled</string>
+    <string name="unable_to_save_log">Unable to save log. Did you enter a valid filename?</string>
+
+    <string name="version">Version %s</string>
+
+    <string name="widget_recording_in_progress">Recording…</string>
+    <string name="widget_start_recording">Record Log</string>
     <!-- Toolbox -->
     <string-array name="default_titles">
         <item>S Finder</item>
         <item>Quick Connect</item>
-        <item>Linterna</item>
-        <item>Captura de pantalla</item>
-        <item>Lupa</item>
+        <item>Torch Ligh</item>
+        <item>Screen Write</item>
+        <item>Magnifier</item>
     </string-array>
     <string-array name="default_summaries">
-        <item>Abrir S Finder</item>
-        <item>Abrir Quick Connect</item>
-        <item>Torch on/off</item>
-        <item>Realizar captura de pantalla y editar</item>
-        <item>Ampliar objetos en la pantalla</item>
+        <item>Open S Finder</item>
+        <item>Open Quick Connect</item>
+        <item>Turn Torch on/off</item>
+        <item>Take screenshot and open in editor</item>
+        <item>Magnify objects on the screen</item>
     </string-array>
-    <string name="title_activity_sort">Ordenar Apps</string>
-    <string name="max_reached_toast">Se ha alcanzado el número máximo de apps en Toolbox (12).</string>
-    <string name="sort">Ordenar</string>
+    <string name="title_activity_sort">Sort Apps</string>
+    <string name="max_reached_toast">Max toolbox app number (12) is reached</string>
+    <string name="sort">Sort</string>
 
     <!-- HexConverter -->
-    <string name="select_color_picker">Elija un selector de color:</string>
-    <string name="hex_color">Color Hexadecimal: %1$s</string>
-    <string name="color_integer">Color Entero: %1$s</string>
-    <string name="smali_integer">Color Smali: %1$s</string>
-    <string name="select_color">Selecciona un color</string>
-    <string name="color_selector_image_view">Seleccionar un color de una imagen</string>
-    <string name="Select_image">Seleccionar imagen</string>
-    <string name="Crop_image">Recortar imagen</string>
+    <string name="select_color_picker">Select color picker:</string>
+    <string name="hex_color">Hex color: %1$s</string>
+    <string name="color_integer">Color integer: %1$s</string>
+    <string name="smali_integer">Smali integer: %1$s</string>
+    <string name="select_color">Select color</string>
+    <string name="color_selector_image_view">Color selector image view</string>
+    <string name="Select_image">Select image</string>
+    <string name="Crop_image">Crop image</string>
     <string-array name="spinner_values">
-        <item>Selector de colores</item>
-        <item>Seleccionar color desde imagen</item>
+        <item>Color picker dialog</item>
+        <item>Select color from Image</item>
     </string-array>
 
     <!-- UriSelectionPreference -->
-    <string name="reboot_menu">Menú Reiniciar</string>
-    <string name="reboot_device_text">Reiniciar dispositivo</string>
-    <string name="reboot_recovery_text">Reiniciar en Recovery</string>
-    <string name="reboot_ui_text">Reiniciar SystemUI</string>
-    <string name="app_reboot_required_dialog_title">Se requiere reiniciar la App</string>
-    <string name="app_reboot_required_dialog_message">Para que esta acción tenga efecto, es necesario reiniciar %1$s.\n\nPulsa OK para reiniciar ahora</string>
-    <string name="reboot_required_dialog_title">Se requiere reiniciar el dispositivo</string>
-    <string name="reboot_required_dialog_message">Para que esta acción tenga efecto, es necesario reiniciar el dispositivo completamente. Desea reiniciar ahora?</string>
-    <string name="reboot_later_negative_button">Más tarde</string>
-    <string name="reboot_now_dialog_button">Reiniciar ahora</string>
+    <string name="reboot_menu">Reboot menu</string>
+    <string name="reboot_device_text">Reboot Device</string>
+    <string name="reboot_recovery_text">Reboot Recovery</string>
+    <string name="reboot_ui_text">Reboot SystemUI</string>
+    <string name="app_reboot_required_dialog_title">App reboot required</string>
+    <string name="app_reboot_required_dialog_message">For this action to take effect it is required to restart %1$s.\n\nPress OK to restart now</string>
+    <string name="reboot_required_dialog_title">Device reboot required</string>
+    <string name="reboot_required_dialog_message">For this action to take effect, full device reboot is required. Would you like to reboot now?</string>
+    <string name="reboot_later_negative_button">later</string>
+    <string name="reboot_now_dialog_button">reboot now</string>
 </resources>

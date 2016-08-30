@@ -225,7 +225,7 @@ public class MainViewActivity extends AppCompatActivity
             super.onBackPressed();
         }
         else{
-            Toast.makeText(getBaseContext(), "Pulsa de nuevo para Salir", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Press again to Exit", Toast.LENGTH_SHORT).show();
             back_pressed = System.currentTimeMillis();
         }
     }
@@ -266,14 +266,14 @@ public class MainViewActivity extends AppCompatActivity
                 if(item.isChecked()){
                     item.setChecked(false);
                     menu.setEnabled(false);
-                    Toast.makeText(MainViewActivity.this, "Menú flotante desactivado", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainViewActivity.this, "Floating Menu Off", Toast.LENGTH_LONG).show();
                     editor = prefs.edit();
                     editor.putBoolean("floating_button_activador",false);
                     editor.commit();
                 }else{
                     item.setChecked(true);
                     menu.setEnabled(true);
-                    Toast.makeText(MainViewActivity.this, "Menú flotante activado", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainViewActivity.this, "Floating Menu On", Toast.LENGTH_LONG).show();
                     editor = prefs.edit();
                     editor.putBoolean("floating_button_activador",true);
                     editor.commit();
@@ -285,7 +285,7 @@ public class MainViewActivity extends AppCompatActivity
                     fab_close = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close);
                     menu.startAnimation(fab_close);
                     menu.hide();
-                    Toast.makeText(MainViewActivity.this, "Menú flotante oculto", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainViewActivity.this, "Floating Menu hidden", Toast.LENGTH_LONG).show();
                     editor = prefs.edit();
                     editor.putBoolean("floating_button_vista",false);
                     editor.commit();
@@ -294,7 +294,7 @@ public class MainViewActivity extends AppCompatActivity
                     fab_open = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_open);
                     menu.startAnimation(fab_open);
                     menu.show();
-                    Toast.makeText(MainViewActivity.this, "Menú flotante visible", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainViewActivity.this, "Floating Menu shown", Toast.LENGTH_LONG).show();
                     editor = prefs.edit();
                     editor.putBoolean("floating_button_vista",true);
                     editor.commit();

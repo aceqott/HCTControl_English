@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gracias por confiar y colaborar en este proyecto. Muchas gracias amigo por tu ayuda."
+            android:text="Thank you for trusting and collaborate on this project. Friend, thank you very much for your help."
             android:textSize="12dp"
             android:layout_toEndOf="@+id/imageViewJite"
             android:layout_marginLeft="5dp"
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gracias por tus consejos y la colabaración con la ROM."
+            android:text="Thank you for your advice and collaboration with the ROM."
             android:textSize="12dp"
             android:layout_toEndOf="@+id/imageViewKijo"
             android:layout_marginLeft="5dp"

@@ -19,7 +19,7 @@
 
             <TextView
                 style="@style/infoHeader"
-                android:text="● Tiempo en cada estado"
+                android:text="● Time In State"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold" />
@@ -40,7 +40,7 @@
                 android:textColor="#ffffff"
                 android:textSize="20dp"
                 android:background="#551111"
-                android:text="Error leyendo datos del Kernel. Puede que el Kernel instalado no sea compatible."
+                android:text="Kernel Error reading data. Kernel installed may not be compatible."
                 android:visibility="gone"
                 android:id="@+id/ui_states_warning"/>
 
@@ -49,7 +49,7 @@
                 android:id="@+id/ui_header_additional_states"
                 style="@style/infoHeader"
                 android:visibility="gone"
-                android:text="● Estados NO usados de CPU"
+                android:text="● Unused CPU states"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp" />
 
@@ -63,7 +63,7 @@
             <TextView
                 android:id="@+id/ui_header_total_state_time"
                 style="@style/infoHeader"
-                android:text="● Tiempo total de estados"
+                android:text="● Total State Time"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold" />
 

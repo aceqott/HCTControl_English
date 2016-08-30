@@ -39,7 +39,7 @@ public class LicenseMain extends AppCompatActivity {
     if (getSupportActionBar() != null) {
       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
       getSupportActionBar().setDisplayShowHomeEnabled(true);
-      getSupportActionBar().setTitle("Licencias");
+      getSupportActionBar().setTitle("Licenses");
     }
 
     List<LicenseEntry> licenses = new ArrayList<>();

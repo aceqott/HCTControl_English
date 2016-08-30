@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Desarrollador"
+                android:text="Developer"
                 android:textSize="12dp"
                 android:layout_toEndOf="@+id/imageViewAce"
                 android:layout_marginLeft="5dp"

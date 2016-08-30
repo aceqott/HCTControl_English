@@ -62,7 +62,7 @@ public class RestorePreferences {
                             getFiles();
                             //here we call the method that is going to restore
                             dialog.dismiss();
-                            Toast.makeText(c.getApplicationContext(), "Datos restaurados en: " + prefdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(c.getApplicationContext(), "Restore data: " + prefdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
                             final DialogoAlertaReiniciar dialogo = new DialogoAlertaReiniciar();
                             dialogo.show(myContext.getSupportFragmentManager(), "tagAlerta");
                             Shell.getRebootAction("su -c 'chmod 660 /data/data/com.hctrom.romcontrol/shared_prefs/com.hctrom.romcontrol_preferences.xml'");

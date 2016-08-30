@@ -119,7 +119,7 @@ public class PackageHunterMain extends AppCompatActivity {
   public boolean onOptionsItemSelected(MenuItem item) {
       switch (item.getItemId()) {
           case R.id.action_refresh:
-              Toast.makeText(getBaseContext(), "Lista Apps\nActualizada", Toast.LENGTH_SHORT).show();
+              Toast.makeText(getBaseContext(), "List Apps\nUpdated", Toast.LENGTH_SHORT).show();
               pkgInfoArrayList = packageHunter.getInstalledPackages();
               adapter.updateWithNewListData(pkgInfoArrayList);
               break;

@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\tDesde aquí podrás enviar un correo a HCTeam para cualquier tipo de información o pregunta respecto a HCT Control. Solo hará falta rellenar los campos *Asunto y *Mensaje y al pulsar en *ENVIAR automáticamente abrirá tu correo prederteminado con los campos ya cubiertos y listos para enviar."
+            android:text="\tFrom here you can send an email to HCTeam for any information or questions regarding HCT Control. Fill in the fields *Title and *Message and click on *SEND automatically open your default mail, with fields already covered and ready to send."
             android:id="@+id/textView3"
             android:textStyle="bold"
             android:textSize="12dp" />
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_below="@+id/textView3">
-            <TextView android:text="Asunto"
+            <TextView android:text="Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtForSubject"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_below="@id/LinearLayout03">
-            <TextView android:text="Mensaje"
+            <TextView android:text="Message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtForBody"
@@ -74,7 +74,7 @@
         <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnSend"
-            android:text="Enviar"
+            android:text="Send"
             android:imeOptions="actionSend"
             android:width="150dip"
             android:layout_centerHorizontal="true"

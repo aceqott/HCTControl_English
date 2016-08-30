@@ -2,157 +2,153 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceScreen
         android:icon="@drawable/ic_weather"
-        android:summary="Muestra la información del tiempo en el Bloqueo"
-        android:title="Tiempo"
+        android:summary="Displays weather information in the Lockscreen"
+        android:title="Weather"
         android:widgetLayout="@layout/round_more_icon">
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Preferencias generales">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="General preferences">
             <SwitchPreference
                 android:defaultValue="false"
-                android:title="Información Tiempo"
+                android:title="Weather information"
                 android:key="weather_widget"
-                android:summaryOn="Visible \n*Es necesario buscar localización de tu ciudad por GPS en la aplicación del tiempo si no lo hicistes en la configuración inicial de instalación."
-                android:summaryOff="Oculto" />
+                android:summaryOn="Shown \n*You need to search your city location by GPS in the application of weather, if you did not before the initial installation configuration."
+                android:summaryOff="Hidden" />
         </PreferenceCategory>
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Ajustes de Color" />
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Colors" />
         <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:dependency="weather_widget"
-                android:title="Grados"
+                android:title="Text-degree Color"
                 android:key="color_temp"
-                android:summary="Elegir el color de los grados"
+                android:summary="Choose Color"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:dependency="weather_widget"
-                android:title="Temperatura máxima"
+                android:title="Text Color Max Temperature"
                 android:key="color_high_temp"
-                android:summary="Elegir el color de la temperatura máxima"
+                android:summary="Choose Color"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:dependency="weather_widget"
-                android:title="Temperatura mínima"
+                android:title="Text Color Min Temperature"
                 android:key="color_low_temp"
-                android:summary="Elegir el color de la temperatura mínima"
+                android:summary="Choose Color"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true" />
     </PreferenceScreen>
     <PreferenceScreen
         android:icon="@drawable/ic_clockdate"
-        android:title="Personalizar Reloj, Fecha y Alarma"
-        android:summary="Personalizar fuente y colores para Reloj, Fecha y Alarma"
+        android:title="Customize Clock, Date and Alarm"
+        android:summary="ustomize font and colors to Clock, Date and Alarm"
         android:widgetLayout="@layout/round_more_icon">
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Reloj" />
-            <PreferenceCategory android:title="Fuente del Reloj">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Clock" />
+            <PreferenceCategory android:title="Clock font">
                 <SwitchPreference
                     android:defaultValue="false"
-                    android:title="Activar fuente personalizada"
+                    android:title="Enable custom font"
                     android:key="use_lockscreen_clock_font_style"
-                    android:summaryOn="Activado"
-                    android:summaryOff="Desactivado" />
+                    android:summaryOn="Enabled"
+                    android:summaryOff="Disabled" />
                 <com.hctrom.romcontrol.prefs.MyListPreference
                     android:widgetLayout="@layout/round_more_icon"
                     android:defaultValue="1"
                     android:entries="@array/lockscreen_font_style_entries"
-                    android:title="Fuente del Reloj"
+                    android:title="Clock font"
                     android:key="lockscreen_clock_font_style"
                     android:entryValues="@array/lockscreen_font_style_values" />
             </PreferenceCategory>
-            <PreferenceCategory android:title="Escala de tamaño" />
+            <PreferenceCategory android:title="Scaled Resizing" />
                 <SwitchPreference
-                    android:title="Activar tamaño personalizado"
+                    android:title="Clock Scaling On/Off Toggle"
                     android:key="scaling_toggle"
                     android:defaultValue="false"
-                    android:summaryOn="Activado"
-                    android:summaryOff="Desactivado" />
+                    android:summaryOn="Enabled"
+                    android:summaryOff="Disabled" />
                 <com.hctrom.romcontrol.prefs.SeekBarPreference
                     android:max="400"
-                    android:title="Tamaño Reloj"
+                    android:title="Clock Scaling"
                     android:key="lockscreen_clock_scale"
-                    android:summary="Ajustar el tamaño del reloj"
+                    android:summary="Adjust clock size"
                     android:dependency="scaling_toggle"
                     android:defaultValue="300"
                     min="150"
                     unitsRight="dp" />
                 <com.hctrom.romcontrol.prefs.SeekBarPreference
                     android:max="325"
-                    android:title="Tamaño Segundos"
+                    android:title="Clock Scaling Seconds"
                     android:key="seconds_clock_scale"
-                    android:summary="Ajustar el tamaño de los segundos"
+                    android:summary="Adjust Seconds size"
                     android:dependency="scaling_toggle"
                     android:defaultValue="170"
                     min="100"
                     unitsRight="dp" />
                 <com.hctrom.romcontrol.prefs.SeekBarPreference
                     android:max="150"
-                    android:title="Tamaño Fecha"
+                    android:title="Clock Scaling Date"
                     android:key="date_clock_scale"
-                    android:summary="Ajustar el tamaño de la fecha"
+                    android:summary="Adjust Date size"
                     android:dependency="scaling_toggle"
                     android:defaultValue="70"
                     min="50"
                     unitsRight="dp" />
-            <PreferenceCategory android:title="Colores del Reloj">
+            <PreferenceCategory android:title="Clock custom colors">
                 <SwitchPreference
-                    android:title="Activar colores personalizados"
+                    android:title="Enable custom colors"
                     android:key="link_lockscreen_clock_colors"
                     android:defaultValue="false"
-                    android:summaryOn="Activado"
-                    android:summaryOff="Desactivado" />
+                    android:summaryOn="Enabled"
+                    android:summaryOff="Disabled" />
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
                     android:dependency="link_lockscreen_clock_colors"
-                    android:title="Hora"
+                    android:title="Text Color hours"
                     android:key="kg_clock_hours_color"
-                    android:summary="Elegir el color de la Hora"
                     android:defaultValue="#ffffff"
                     alphaSlider="true"
                     hexValue="true"/>
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
                     android:dependency="link_lockscreen_clock_colors"
-                    android:title="Minutos"
+                    android:title="Text Color minutes"
                     android:key="kg_clock_minutes_color"
-                    android:summary="Elegir el color de los Minutos"
                     android:defaultValue="#ffffff"
                     alphaSlider="true"
                     hexValue="true"/>
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
                     android:dependency="link_lockscreen_clock_colors"
-                    android:title="Fecha"
+                    android:title="The color of the date text"
                     android:key="kg_date_color"
-                    android:summary="Elegir el color de la Fecha"
                     android:defaultValue="#ffffff"
                     alphaSlider="true"
                     hexValue="true"/>
                 <SwitchPreference
-                    android:title="Activar segundos"
+                    android:title="Show seconds in hours"
                     android:key="lock_seconds"
                     android:defaultValue="false"
-                    android:summaryOn="Visible"
-                    android:summaryOff="Oculto" />
+                    android:summaryOn="Shown"
+                    android:summaryOff="Hidden" />
                 <com.hctrom.romcontrol.prefs.ColorPickerPreference
                     android:dependency="link_lockscreen_clock_colors"
-                    android:title="Segundos"
+                    android:title="Text Color seconds Hours"
                     android:key="kg_clock_second_color"
-                    android:summary="Elegir el color de los segundos"
                     android:defaultValue="#ffffff"
                     alphaSlider="true"
                     hexValue="true"/>
         </PreferenceCategory>
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Alarma">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Alarm">
             <SwitchPreference
                 android:defaultValue="false"
                 android:icon="@drawable/ic_qs_alarm_on"
-                android:title="Siguiente alarma"
+                android:title="Next Alarm"
                 android:key="next_alarm_toggle"
-                android:summaryOn="Visible"
-                android:summaryOff="Oculto" />
+                android:summaryOn="Shown"
+                android:summaryOff="Hidden" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
                 android:dependency="next_alarm_toggle"
-                android:title="Color Texto"
+                android:title="Text color"
                 android:key="next_alarm_color"
-                android:summary="Elegir el color del texto de la alarma"
+                android:summary="Choose the text color alarm"
                 android:defaultValue="#ffffff"
                 alphaSlider="true"
                 hexValue="true" />
@@ -160,54 +156,54 @@
     </PreferenceScreen>
     <PreferenceScreen
         android:icon="@drawable/ic_simtoolkit"
-        android:title="Texto operadora personalizado"
-        android:summary="Establecer texto personalizado de la operadora de la Statusbar en la pantalla de bloqueo y ajustar el color"
+        android:title="Custom text carrier"
+        android:summary="Set custom text of the carrier of the StatusBar on the lockscreen and adjust the color"
         android:widgetLayout="@layout/round_more_icon">
-        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Texto operadora personalizado">
+        <PreferenceCategory android:layout="@layout/preferences_category" android:title="Custom text carrier">
             <CheckBoxPreference
-                android:title="Usar texto personalizado de la operadora"
+                android:title="Use Custom Carrier Text"
                 android:key="custom_lock_carrier"
                 android:defaultValue="false"
-                android:summaryOn="Activado"
-                android:summaryOff="Desactivado" />
+                android:summaryOn="Enabled"
+                android:summaryOff="Disabled" />
             <com.hctrom.romcontrol.prefs.MyEditTextPreference
-                android:title="Texto operadora personalizado"
+                android:title="Carrier Custom Text"
                 android:defaultValue=""
                 android:key="custom_lock_carrier_text"
                 android:dependency="custom_lock_carrier"
-                android:dialogTitle="Establecer texto personalizado de la operadora en el bloqueo" />
+                android:dialogTitle="Set Custom Text" />
             <com.hctrom.romcontrol.prefs.ColorPickerPreference
-                android:title="Color"
+                android:title="Carrier Text"
                 hexValue="true"
                 alphaSlider="true"
                 android:defaultValue="#ffffff"
                 android:key="carrier_color"
-                android:summary="Elegir el color del texto \n*Tardará unos minutos en actualizarse" />
+                android:summary="Choose carrier color" />
         </PreferenceCategory>
     </PreferenceScreen>
-    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Otras Preferencias">
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Other preferences">
         <com.hctrom.romcontrol.prefs.MyListPreference
             android:widgetLayout="@layout/round_more_icon"
             android:entries="@array/lockscreen_notif_entries"
-            android:title="Número de notificaciones visibles en Bloqueo"
+            android:title="Notifications Shown on Lockscreen"
             android:key="lockscreen_notifications"
             android:defaultValue="2"
             android:entryValues="@array/lockscreen_notif_values" />
         <SwitchPreference
             android:defaultValue="false"
             android:key="lockscreen_rotate"
-            android:summaryOff="Desactivado"
-            android:summaryOn="Activado"
-            android:title="Rotar Pantalla Bloqueo" />
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
+            android:title="Rotate Lockscreen" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="unlock_guide_text"
-            android:summaryOff="Texto de ayuda oculto en bloqueo"
-            android:summaryOn="Texto de ayuda visible en bloqueo"
-            android:title="Desplazar pantalla para desbloquear" />
+            android:summaryOff="Hidden"
+            android:summaryOn="Shown"
+            android:title="Swipe screen to unlock" />
         <com.hctrom.romcontrol.prefs.MyListPreference
             android:entries="@array/display_timeout_entries"
-            android:title="Tiempo de espera Bloqueo Pantalla"
+            android:title="Lockscreen Display Timeout"
             android:widgetLayout="@layout/round_more_icon"
             android:key="display_timeout_delay"
             android:defaultValue="10000"

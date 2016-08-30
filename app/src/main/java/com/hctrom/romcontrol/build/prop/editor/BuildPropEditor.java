@@ -126,8 +126,8 @@ public class BuildPropEditor extends ListActivity {
             case R.id.action_reboot:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-                builder.setMessage("Es necesario reiniciar el teléfono para que los cambios sean aplicados.\n\nDesea reiniciar ahora?")
-                        .setTitle("REINICIAR SISTEMA")
+                builder.setMessage("You need to restart your phone to finish apply the changes.\n\nReboot now?")
+                        .setTitle("REBOOT SYSTEM")
                         .setOnKeyListener(new Dialog.OnKeyListener() {
                             @Override
                             public boolean onKey(DialogInterface arg0, int keyCode, KeyEvent event) {
@@ -138,13 +138,13 @@ public class BuildPropEditor extends ListActivity {
                                 return true;
                             }
                         })
-                        .setPositiveButton("SI", new DialogInterface.OnClickListener() {
+                        .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.dismiss();
                                 Shell.getRebootAction("reboot");
                             }
                         })
-                        .setNegativeButton("TODAVÍA NO", new DialogInterface.OnClickListener() {
+                        .setNegativeButton("NOT NOW", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.dismiss();
 
@@ -294,7 +294,7 @@ public class BuildPropEditor extends ListActivity {
             }
         }
         
-    	Toast.makeText(getApplicationContext(), "Se ha creado un Backup del build.prop en " + Environment.getExternalStorageDirectory().getAbsolutePath() + "/HCTControl/build.prop.bak", Toast.LENGTH_SHORT).show();
+    	Toast.makeText(getApplicationContext(), "It has created a Backup of build.prop in " + Environment.getExternalStorageDirectory().getAbsolutePath() + "/HCTControl/build.prop.bak", Toast.LENGTH_SHORT).show();
     }
     
     private void restore() {
@@ -325,7 +325,7 @@ public class BuildPropEditor extends ListActivity {
             }
         }
         
-    	Toast.makeText(getApplicationContext(), "Se ha Restaurado el build.prop desde " + Environment.getExternalStorageDirectory().getAbsolutePath() + "/build.prop.bak", Toast.LENGTH_SHORT).show();
+    	Toast.makeText(getApplicationContext(), "It has been restored from build.prop " + Environment.getExternalStorageDirectory().getAbsolutePath() + "/build.prop.bak", Toast.LENGTH_SHORT).show();
     }
     
     private void createTempFile() {

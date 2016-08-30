@@ -65,7 +65,7 @@ public class CopiarRestaurar {
                                                 e.printStackTrace();
                                             }
 
-                                            Toast.makeText(act.getApplicationContext(), "Backup creado en: " + filesdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(act.getApplicationContext(), "Backup created in: " + filesdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
                                         }
                                     })
                                     .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -84,7 +84,7 @@ public class CopiarRestaurar {
                         } else if (position == 1 ){
                             dialog.dismiss();
                             confirm.setMessage(R.string.confirm_restore)
-                                    .setTitle("Restaurar")
+                                    .setTitle("Restore")
                                     .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
@@ -103,17 +103,17 @@ public class CopiarRestaurar {
                                             } catch (IOException e) {
                                                 e.printStackTrace();
                                             }
-                                            Toast.makeText(act.getApplicationContext(), "Datos restaurados en: " + prefdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(act.getApplicationContext(), "Restored data in: " + prefdir.getAbsolutePath(), Toast.LENGTH_SHORT).show();
                                             //checkRestaurar();
-                                            confirm.setMessage("Se recomienda reiniciar el teléfono para terminar de aplicar los cambios.\n\nDesea reiniciar ahora?")
-                                                    .setTitle("REINICIAR SISTEMA")
-                                                    .setPositiveButton("SI", new DialogInterface.OnClickListener() {
+                                            confirm.setMessage("It is recommended to restart your phone to finish apply the changes.\n\nRestart now?")
+                                                    .setTitle("REBOOT SYSTEM")
+                                                    .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                                                         public void onClick(DialogInterface dialog, int id) {
                                                             dialog.dismiss();
                                                             Shell.getRebootAction("reboot");
                                                         }
                                                     })
-                                                    .setNegativeButton("AHORA NO", new DialogInterface.OnClickListener() {
+                                                    .setNegativeButton("NOT NOW", new DialogInterface.OnClickListener() {
                                                         public void onClick(DialogInterface dialog, int id) {
                                                             dialog.dismiss();
                                                             // Restart

@@ -61,7 +61,7 @@ public class ImagenPerfil extends AppCompatActivity implements View.OnClickListe
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            getSupportActionBar().setTitle("Inicio de sesión");
+            getSupportActionBar().setTitle("Login");
         }
         btnAction = (Button)findViewById(R.id.btnPic);
         btnDelete = (Button)findViewById(R.id.btnDelete);
@@ -127,7 +127,7 @@ public class ImagenPerfil extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btnAplicar:
                 String edittext = "" + editText.getText();
-                Toast.makeText(this, "Nombre:  " + editText.getText(), Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Name:  " + editText.getText(), Toast.LENGTH_LONG).show();
                 editor.putString("check_text_profile", edittext);
                 editor.commit();
 

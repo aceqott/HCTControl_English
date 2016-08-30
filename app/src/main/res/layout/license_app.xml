@@ -9,7 +9,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ACERCA DE ..."
+            android:text="ABOUT ..."
             android:id="@+id/textViewTitulo"
             android:layout_gravity="top|center_horizontal"
             android:textSize="30dp"
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageButtonCompartir"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Ver Licencias"
+            android:text="See Licenses"
             android:layout_centerHorizontal="true"
             android:onClick="onClick"
             android:background="?attr/colorAccent"

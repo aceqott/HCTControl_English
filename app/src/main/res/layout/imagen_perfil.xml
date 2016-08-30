@@ -31,7 +31,7 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="● Selecciona una imagen guardada para mostrar como perfil/avatar."
+				android:text="● Select a saved image to display as a profile/avatar."
 				android:id="@+id/textView"
 				android:textSize="13dp"
 				android:layout_below="@+id/imgView"
@@ -40,7 +40,7 @@
 				android:layout_marginLeft="40dp"
 				android:layout_marginRight="40dp" />
 			<Button
-				android:text="Buscar Imagen"
+				android:text="Search image"
 				android:id="@+id/btnPic"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
 			<CheckBox
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Mostrar imagen personalizada en el menú principal."
+				android:text="Show custom image in the main menu."
 				android:id="@+id/checkBox"
 				android:layout_marginTop="10dp"
 				android:layout_below="@+id/textView"
@@ -65,7 +65,7 @@
 				android:layout_marginLeft="30dp"
 				android:layout_marginRight="30dp" />
 			<Button
-				android:text="Eliminar Imagen"
+				android:text="Remove image"
 				android:id="@+id/btnDelete"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="●  Escribe un nombre para mostrarlo en la cabecera del menú (nick, apodo, nombre, ...)."
+				android:text="●  Enter a name for display in the header menu (nick, nickname, name, ...)."
 				android:id="@+id/textoUser"
 				android:textSize="13dp"
 				android:layout_marginLeft="40dp"
@@ -88,7 +88,7 @@
 				android:layout_below="@+id/btnDelete"
 				android:layout_marginTop="20dp" />
 			<Button
-				android:text="Aplicar"
+				android:text="Apply"
 				android:id="@+id/btnAplicar"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="●  Al pulsar en &quot;Aplicar&quot;, la aplicación se reiniciará automáticamente para aplicar los cambios."
+				android:text="●  By clicking on &quot;Apply&quot;, the application will reboot to apply the automatically changes."
 				android:id="@+id/textoAplicar"
 				android:textSize="12dp"
 				android:layout_marginLeft="40dp"
@@ -121,7 +121,7 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="●  Para no mostrar un nombre, dejar en blanco."
+				android:text="●  To not show a name, leave blank."
 				android:id="@+id/textoEnblanco"
 				android:textSize="8dp"
 				android:layout_below="@+id/editText"

@@ -61,7 +61,7 @@ public class VideoTutorial extends AppCompatActivity implements SurfaceHolder.Ca
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            getSupportActionBar().setTitle("VideoTutorial");
+            getSupportActionBar().setTitle("Video-Tutorial");
         }
 
         // Comprobamos conexión a internet
@@ -156,7 +156,7 @@ public class VideoTutorial extends AppCompatActivity implements SurfaceHolder.Ca
     @Override
     public void onPrepared(MediaPlayer mp) {
         mediaPlayer.start();
-        Toast.makeText(VideoTutorial.this, "Reproduciendo ...", Toast.LENGTH_LONG).show();
+        Toast.makeText(VideoTutorial.this, "Playing ...", Toast.LENGTH_LONG).show();
 
         mediaController.setMediaPlayer(this);
         mediaController.setAnchorView(surfaceView);

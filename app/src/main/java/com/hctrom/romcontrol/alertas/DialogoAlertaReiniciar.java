@@ -24,8 +24,8 @@ public class DialogoAlertaReiniciar extends DialogFragment {
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(getActivity());
 
-        builder.setMessage("Es necesario reiniciar el teléfono para terminar de aplicar los cambios.\n\n¿Desea reiniciar ahora?")
-                .setTitle("REINICIAR SISTEMA")
+        builder.setMessage("You need to restart your phone to finish apply the changes.\n\nReboot now?")
+                .setTitle("REBOOT SYSTEM")
                 .setOnKeyListener(new Dialog.OnKeyListener() {
                     @Override
                     public boolean onKey(DialogInterface arg0, int keyCode, KeyEvent event) {
@@ -36,14 +36,14 @@ public class DialogoAlertaReiniciar extends DialogFragment {
                         return true;
                     }
                 })
-                .setPositiveButton("SI", new DialogInterface.OnClickListener() {
+                .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
                         getActivity().finish();
                         Shell.getRebootAction("reboot");
                     }
                 })
-                .setNegativeButton("AHORA NO", new DialogInterface.OnClickListener() {
+                .setNegativeButton("NOT NOW", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
 

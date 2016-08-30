@@ -27,7 +27,7 @@ public class DiagnosticActivity extends AppCompatActivity {
     DiagnosticViewPagerAdapter adapter;
     ViewPager pager;
     DiagnosticSlidingTabLayout tabs;
-    CharSequence Titles[] = {"CPU SPY","BATERÍA", "App Info"};
+    CharSequence Titles[] = {"CPU SPY","BATTERY", "App Info"};
     int Numboftabs = 3;
 
     /** Initialize the Activity */
@@ -52,7 +52,7 @@ public class DiagnosticActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            getSupportActionBar().setTitle("Diagnóstico");
+            getSupportActionBar().setTitle("Diagnostic");
         }
 
         // Creating The ViewPagerAdapterADSE and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.

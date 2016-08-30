@@ -55,20 +55,20 @@ public class Tab2Battery extends Fragment {
             int health = intent.getIntExtra("health", 0);
             int voltage = intent.getIntExtra("voltage", 0);
 
-            mTextViewInfo.setText("Datos de Batería : ");
+            mTextViewInfo.setText("Battery data : ");
             mProgressStatus = (int)((percentage)*100);
             mTextViewPercentage.setText("" + mProgressStatus + "%");
-            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Tecnología : " + technology);
-            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Conexión : " + getPlugTypeString(plugged));
+            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Technology : " + technology);
+            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Connection : " + getPlugTypeString(plugged));
             if (isConnected(intent)){
-                mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Nivel Batería : "+ mProgressStatus + "%  -");
+                mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Battery level : "+ mProgressStatus + "%  -");
                 if (level == 100){
                     imageView.setImageResource(R.drawable.battery_full);
                 }else {
                     imageView.setImageResource(R.drawable.battery_charging);
                 }
             }else{
-                mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Nivel Batería : "+ mProgressStatus + "%  -");
+                mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Battery level : "+ mProgressStatus + "%  -");
                 if (level == 100) {
                     imageView.setImageResource(R.drawable.battery_full);
                 }else if (level >= 16){
@@ -77,32 +77,32 @@ public class Tab2Battery extends Fragment {
                     imageView.setImageResource(R.drawable.battery_min);
                 }
             }
-            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Estado : " + getHealthString(health));
-            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Voltaje : " + voltage);
-            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Temp. Batería : " + temp + "°C");
+            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• State : " + getHealthString(health));
+            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Voltage : " + voltage);
+            mTextViewInfo.setText(mTextViewInfo.getText() + "\n• Temp. Battery : " + temp + "°C");
             mProgressBar.setProgress(mProgressStatus);
             mTemp.setText(temp + "°C");
         }
     };
 
     private String getHealthString(int health) {
-        String healthString = "Desconocido";
+        String healthString = "Unknown";
 
         switch (health) {
             case BatteryManager.BATTERY_HEALTH_DEAD:
-                healthString = "Malo";
+                healthString = "Bad";
                 break;
             case BatteryManager.BATTERY_HEALTH_GOOD:
-                healthString = "Bueno";
+                healthString = "Good";
                 break;
             case BatteryManager.BATTERY_HEALTH_OVER_VOLTAGE:
-                healthString = "Exceso Voltaje";
+                healthString = "Excess Voltage";
                 break;
             case BatteryManager.BATTERY_HEALTH_OVERHEAT:
-                healthString = "Sobrecalentamiento";
+                healthString = "Overheating";
                 break;
             case BatteryManager.BATTERY_HEALTH_UNSPECIFIED_FAILURE:
-                healthString = "Fallo";
+                healthString = "Failure";
                 break;
         }
 

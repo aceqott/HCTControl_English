@@ -82,7 +82,7 @@ public class SettingsActivity extends PreferenceActivity implements OnPreference
 		LinearLayout root = (LinearLayout)findViewById(android.R.id.list).getParent().getParent().getParent();
 		Toolbar bar = (Toolbar) LayoutInflater.from(this).inflate(R.layout.toolbar_default, root, false);
 		root.addView(bar, 0); // insert at top
-		bar.setTitle("Ajustes CatLog");
+		bar.setTitle("Settings CatLog");
 		bar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
 		bar.setNavigationOnClickListener(new View.OnClickListener() {
 			@Override

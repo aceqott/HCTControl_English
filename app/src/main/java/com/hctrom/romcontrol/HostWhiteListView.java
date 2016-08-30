@@ -55,7 +55,7 @@ public class HostWhiteListView extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            getSupportActionBar().setTitle("Lista Blanca Hosts");
+            getSupportActionBar().setTitle("White List Hosts");
         }
 
         editText = (EditText) findViewById(R.id.editTextDominio);
@@ -129,7 +129,7 @@ public class HostWhiteListView extends AppCompatActivity {
                     buttonAplicar.setVisibility(View.VISIBLE);
                     buttonDelete.setVisibility(View.VISIBLE);
                 }else{
-                    Toast.makeText(getApplicationContext(), "Por favor, introduzca un texto!!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Please enter text!!", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -139,7 +139,7 @@ public class HostWhiteListView extends AppCompatActivity {
             public void onClick(View v) {
                 try {
                     HfmHelpers.RunAsRoot("" + loadWhiteList());
-                    Toast.makeText(getApplicationContext(), "Lista Blanca aplicada con éxito!!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "White List successfully applied!!", Toast.LENGTH_LONG).show();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

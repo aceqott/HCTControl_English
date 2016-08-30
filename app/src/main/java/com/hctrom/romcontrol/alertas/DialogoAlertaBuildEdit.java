@@ -24,16 +24,16 @@ public class DialogoAlertaBuildEdit extends DialogFragment {
         theme.onActivityCreateSetTheme(getActivity());
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        builder.setMessage("Si no sabe Editar o Configurar el Build.prop, por favor, NO modifique nada de este apartado o de lo contrario puede sufrir un BootLoop...")
-                .setTitle("¡¡¡ATENCIÓN!!!")
+        builder.setMessage("If you know not Edit or Configure Build.prop, please, do NOT change anything in this section or otherwise may suffer Bootloop...")
+                .setTitle("¡¡¡ATTENTION!!!")
                 .setCancelable(false)
-                .setPositiveButton("Continuar", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Continue", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                         startActivity(new Intent(getActivity(), BuildPropEditor.class));
                     }
                 })
-                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                     }

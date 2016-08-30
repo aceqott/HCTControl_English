@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
    <item android:id="@+id/menu_refresh"
-         android:title="Actualizar"
+         android:title="Update"
    />
    
    <item android:id="@+id/menu_reset"
-         android:title="Resetear Tiempos"
+         android:title="Reset times"
    />
    
    <item android:id="@+id/menu_restore"
-         android:title="Restaurar Tiempos"
+         android:title="Restore times"
    />
 </menu>
