@@ -40,7 +40,7 @@ To thank on behalf of `HCTeam` all developers above for sharing your code and to
 
 ### Screenshots
 
-![HCTControl](https://github.com/Palleiro/HCTControl/blob/master/HCTControl.png)
+![HCTControl](http://i65.tinypic.com/2wgchnr.jpg)
 
 License
 -------
