@@ -1,10 +1,10 @@
-![HCT](http://fotos.subefotos.com/919a09a499ec6f205114f1cd482c2c7co.png)
+![HCT](http://i67.tinypic.com/2m4bymc.png)
 
 # HCTControl by HCTeam™
 
 [![Platform](http://img.shields.io/badge/platform-android-brightgreen.svg?style=flat)](http://developer.android.com/index.html) [![Language](http://img.shields.io/badge/language-java-orange.svg?style=flat)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-### Librerías y dependencias utilizadas en este proyecto
+### Libraries and dependencies used in this project
 
 - Android SDK: [Google Inc.](https://developer.android.com/sdk/terms.html)
 
@@ -36,9 +36,9 @@
 
 - Blurry: [Wasabeef](https://github.com/wasabeef/Blurry)
 
-Dar las gracias en nombre del `HCTeam` a todos los desarrolladores arriba mencionados por compartir su código y poder hacer esto más grande...
+To thank on behalf of `HCTeam` all developers above for sharing your code and to make this bigger...
 
-### Capturas
+### Screenshots
 
 ![HCTControl](https://github.com/Palleiro/HCTControl/blob/master/HCTControl.png)
 
