@@ -46,7 +46,7 @@ public class LicenseMain extends AppCompatActivity {
 
     licenses.add(Licenses.noContent("Android SDK", "Google Inc.", "https://developer.android.com/sdk/terms.html"));
     licenses.add(Licenses.noContent("RootTools", "Stericson", "https://github.com/Stericson/RootTools"));
-    licenses.add(Licenses.noContent("HCT Control", "HCTeam", "https://github.com/aceqott/HCTControl"));
+    licenses.add(Licenses.noContent("HCT Control", "HCTeam", "https://github.com/aceqott/HCTControl_English"));
     licenses.add(Licenses.noContent("CustomSettingsForDevs", "wubydax", "https://github.com/wubydax/CustomSettingsForDevs"));
     licenses.add(Licenses.fromGitHub("hdodenhof/CircleImageView", Licenses.LICENSE_APACHE_V2));
     licenses.add(Licenses.fromGitHub("shell-software/fab", Licenses.LICENSE_APACHE_V2));
